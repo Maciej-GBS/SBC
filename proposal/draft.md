@@ -4,11 +4,10 @@ Investment portfolio recommendation expert system.
 Money management is a difficult task which requires a lot of experience and training to be performed correctly. There exist companies which specialize in fund management. There is a wide offer of financial instruments that are available to every customer but using them incorrectly and may result in losing money.
 
 ### Justification
-Understanding stock market is a complex task which requires experience and specialized knowledge.
 The goal of the system is to provide decision support for investment in a stock and creating a desired portfolio.
 
 ## Alcance y limite
-Yahoo finance NASDAQ stock ^IXIC (or IBER35)
+Yahoo finance NASDAQ stock ^IXIC (or ^IBEX)
 
 Data will be supplied after preprocessing.
 
@@ -20,6 +19,7 @@ Data will be supplied after preprocessing.
 - real estate mutual funds
 
 ### Inputs
+Data according current state of the market and user settings:
 - return on investment rate (average or higher)
 - risk level (defensive or active)
 - user preferences
