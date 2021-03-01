@@ -2,19 +2,131 @@
 \usepackage[spanish]{babel}
 
 %opening
-\title{Propuesta de un sistema basado en conocimiento}
+\title{Propuesta de un sistema basado en conocimiento\\ \normalsize{Tutor de portafolio}}
 \author{Maciej Nalepa}
 
 \begin{document}
 
 \maketitle
 
-\section{Descripición}
+\section{Descripción}
 
 \section{Alcance y limites}
 
 \section{Viabilidad}
 
-\subsection{Justificación}
+$V_u = 7$
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|}
+		\hline
+		Observación    & Símbolo & Valor \\ \hline
+		Plausibilidad  & $VC_1$  & $75.20$   \\
+		Justificación  & $VC_2$  & $83.66$   \\
+		Adecuación     & $VC_3$  & $80.96$   \\
+		Éxito          & $VC_4$  & $60.47$   \\ \hline
+		\textit{Total} & $VC$    & $75.07$   \\ \hline
+	\end{tabular}
+	\caption{Valor global $VC$}
+	\label{tab:total}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|l|p{4cm}|l|}
+		\hline
+		\scriptsize CATEGORÍA & \scriptsize IDENTIFICADOR & \scriptsize PESO & \scriptsize VALOR & \scriptsize DENOMINACIÓN DE LA CARACTERÍSTICA                                           & \scriptsize TIPO \\ \hline
+		EX                    & P1                        & 10               & 10                & Existen expertos                                                                        & E                \\ \hline
+		EX                    & P2                        & 10               & 9                 & El experto asignado es genuino                                                          & E                \\ \hline
+		EX                    & P3                        & 8                & 9                 & El experto es cooperativo                                                               & D                \\ \hline
+		EX                    & P4                        & 7                & 9                 & El experto es capaz de articular sus métodos pero no categoriza.                        & D                \\ \hline
+		TA                    & P5                        & 10               & 10                & Existen suficientes casos de prueba; normales, típicos, ejemplares, correosos, etc      & E                \\ \hline
+		TA                    & P6                        & 10               & 10                & La tarea está bien estructurada y se entiende                                           & D                \\ \hline
+		TA                    & P7                        & 10               & 10                & Sólo requiere habilidad cognoscitiva (no pericia física)                                & D                \\ \hline
+		TA                    & P8                        & 9                & 10                & No se precisan resultados óptimos sino sólo Satisfactorios, sin comprometer el proyecto & D                \\ \hline
+		TA                    & P9                        & 9                & 5                 & La tarea no requiere sentido común                                                      & D                \\ \hline
+		DU                    & P10                       & 7                & 5                 & Los directivos están verdaderamente comprometidos con el proyecto                       & D \\ \hline
+	\end{tabular}
+	\caption{Plausibilidad}
+	\label{tab:plausibilidad}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|l|p{4cm}|l|}
+		\hline
+		\scriptsize CATEGORÍA & \scriptsize IDENTIFICADOR & \scriptsize PESO & \scriptsize VALOR & \scriptsize DENOMINACIÓN DE LA CARACTERÍSTICA                                 & \scriptsize TIPO \\ \hline
+		EX                    & J1                        & 10               & 10                & El experto NO está disponible                                                 & E                \\ \hline
+		EX                    & J2                        & 10               & 10                & Hay escasez de experiencia humana                                             & D                \\ \hline
+		TA                    & J3                        & 8                & 10                & Existe necesidad de experiencia simultánea en muchos lugares                  & D                \\ \hline
+		TA                    & J4                        & 10               & 10                & Necesidad de experiencia en entornos hostiles, penosos y/o poco gratificantes & E                \\ \hline
+		TA                    & J5                        & 8                & 8                 & No existen soluciones alternativas admisibles                                 & E                \\ \hline
+		DU                    & J6                        & 7                & 10                & Se espera una alta tasa de recuperación de la inversión                       & D                \\ \hline
+		DU                    & J7                        & 8                & 10                & Resuelve una tarea útil y necesaria                                           & E                \\ \hline
+	\end{tabular}
+	\caption{Justificación}
+	\label{tab:justificacion}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|l|p{4cm}|l|}
+		\hline
+		\scriptsize CATEGORÍA & \scriptsize IDENTIFICADOR & \scriptsize PESO & \scriptsize VALOR & \scriptsize DENOMINACIÓN DE LA CARACTERÍSTICA                                                                                       & \scriptsize TIPO \\ \hline
+		EX                    & A1                        & 5                & 9                 & La experiencia del experto está poco organizada                                                                                     & D                \\ \hline
+		TA                    & A2                        & 6                & 10                & Tiene valor práctico                                                                                                                & D                \\ \hline
+		TA                    & A3                        & 7                & 8                 & Es una tarea más táctica que estratégica                                                                                            & D                \\ \hline
+		TA                    & A4                        & 7                & 10                & La tarea da soluciones que sirvan a necesidades a largo plazo                                                                       & E                \\ \hline
+		TA                    & A5                        & 5                & 10                & La tarea no es demasiado fácil, pero es de conocimiento intensivo, tanto propio del dominio, como de manipulación de la información & D                \\ \hline
+		TA                    & A6                        & 6                & 8                 & Es de tamaño manejable, y/o es posible un enfoque gradual y/o, una descomposición en subtareas independientes                       & D                \\ \hline
+		EX                    & A7                        & 7                & 10                & La transferencia de experiencia entre humanos es factible (experto a aprendiz)                                                      & E                \\ \hline
+		TA                    & A8                        & 6                & 8                 & Estaba identificada como un problema en el área y los efectos de la introducción de un SE pueden planificarse                       & D                \\ \hline
+		TA                    & A9                        & 9                & 10                & No requiere respuestas en tiempo real "inmediato“                                                                                   & E                \\ \hline
+		TA                    & A10                       & 9                & 9                 & La tarea no requiere investigación básica                                                                                           & E                \\ \hline
+		TA                    & A11                       & 5                & 7                 & El experto usa básicamente razonamiento simbólico que implica factores subjetivos                                                   & D                \\ \hline
+		TA                    & A12                       & 5                & 9                 & Es esencialmente de tipo heurístico                                                                                                 & D                \\ \hline
+	\end{tabular}
+	\caption{Adecuación}
+	\label{tab:adecuacion}
+\end{table}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|l|p{4cm}|l|}
+		\hline
+		\scriptsize CATEGORÍA & \scriptsize IDENTIFICADOR & \scriptsize PESO & \scriptsize VALOR & \scriptsize DENOMINACIÓN DE LA CARACTERÍSTICA                                                                        & \scriptsize TIPO \\ \hline
+		EX                    & E1                        & 8                & 10                & No se sienten amenazados por el proyecto, son capaces de sentirse intelectualmente unidos al proyecto                & D                \\ \hline
+		EX                    & E2                        & 6                & 8                 & Tienen un brillante historial en la realización de esta tarea                                                        & D                \\ \hline
+		EX                    & E3                        & 5                & 6                 & Hay acuerdos en lo que constituye una buena solución a la tarea                                                      & D                \\ \hline
+		EX                    & E4                        & 5                & 8                 & La única justificación para dar un paso en la solución es la calidad de la solución final                            & D                \\ \hline
+		EX                    & E5                        & 6                & 10                & No hay un plazo de finalización estricto, ni ningún otro proyecto depende de esta tarea                              & D                \\ \hline
+		TA                    & E6                        & 7                & 8                 & No está influenciada por vaivenes políticos                                                                          & E                \\ \hline
+		TA                    & E7                        & 8                & 10                & Existen ya SS.EE. que resuelvan esa o parecidas tareas                                                               & D                \\ \hline
+		TA                    & E8                        & 8                & 10                & Hay cambios mínimos en los procedimientos habituales                                                                 & D                \\ \hline
+		TA                    & E9                        & 5                & 10                & Las soluciones son explicables o interactivas                                                                        & D                \\ \hline
+	\end{tabular}
+	\caption{Éxito}
+	\label{tab:exito1}
+\end{table}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|l|p{4cm}|l|}
+		\hline
+		\scriptsize CATEGORÍA & \scriptsize IDENTIFICADOR & \scriptsize PESO & \scriptsize VALOR & \scriptsize DENOMINACIÓN DE LA CARACTERÍSTICA                                                                        & \scriptsize TIPO \\ \hline
+		TA                    & E10                       & 7                & 10                & La tarea es de I+D de carácter práctico, pero no ambas cosas simultáneamente                                         & E                \\ \hline
+		DU                    & E11                       & 6                & 10                & Están mentalizados y tienen expectativas realistas tanto en el alcance como en las limitaciones                      & D                \\ \hline
+		DU                    & E12                       & 7                & 10                & No rechazan de plano esta tecnología                                                                                 & E                \\ \hline
+		DU                    & E13                       & 6                & 8                 & El sistema interactúa inteligente y amistosamente con el usuario                                                     & D                \\ \hline
+		DU                    & E14                       & 9                & 8                 & El sistema es capaz de explicar al usuario su razonamiento                                                           & D                \\ \hline
+		DU                    & E15                       & 8                & 10                & La inserción del sistema se efectúa sin traumas; es decir, apenas se interfiere en la rutina cotidiana de la empresa & D                \\ \hline
+		DU                    & E16                       & 6                & 10                & Están comprometidos durante toda la duración del proyecto, incluso después de su implantación                        & D                \\ \hline
+		DU                    & E17                       & 8                & 10                & Se efectúa una adecuada transferencia tecnológica                                                                    & E                \\ \hline
+	\end{tabular}
+\caption{Éxito -- continuación}
+\label{tab:exito2}
+\end{table}
+
+%\subsection{Justificación}
 
 \end{document}
