@@ -31,4 +31,5 @@ Data according current state of the market and user settings:
 - https://www.sciencedirect.com/science/article/pii/S0957417402000271
 - https://www.jstor.org/stable/3666068?seq=5#metadata_info_tab_contents
 - https://www.investopedia.com/articles/trading/11/understanding-liquidity-risk.asp
+- https://onlinelibrary.wiley.com/doi/full/10.1002/int.21836
 
