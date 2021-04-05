@@ -1,0 +1,114 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{float}
+
+%opening
+\title{Entrevista documentada\\ \normalsize{Clasificador de plumas}}
+\author{Maciej Nalepa}
+\date{21 de marzo de 2021}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+	\item Fecha: 21/03/21
+	\item Hora: 16:00 - 20:00
+	\item Lugar: en línea
+	\item Asistentes: Ewa Nalepa (Experto)
+\end{enumerate}
+
+\section{Situación del análisis respecto al modelo general}
+Esta entrevista es dedicada a descubrir los elementos y las relaciones en el dominio de clasificación de plumas de pájaros.
+
+\section{Conocimiento anterior a la entrevista}
+El punto de partida de esta entrevista es la descripción incompleta del dominio.
+Ya se sabe el alcance del proyecto y tipos de plumas tratados en el sistema.
+
+\subsection{Lista de elementos}
+\begin{itemize}
+	\item[1wg] Ala
+	\item[2tl] Cola
+	\item[3rm] Rémiges
+	\item[4p] Rémiges primarias (P)
+	\item[5s] Rémiges secundarias (S)
+	\item[6t] Rémiges terciarias (T)
+	\item[7rc] Plumas de la cola (rectrices)
+\end{itemize}
+
+\subsection{Relaciones entre elementos}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ll}
+		4p es una parte de 1wg	& Rémiges primarias son una parte de ala	\\
+		5s es una parte de 1wg	& Rémiges secundarias son una parte de ala	\\
+		6t es una parte de 1wg	& Rémiges terciarias son una parte de ala	\\
+		7rc es una parte de 2tl	& Rectrices son una parte de cola	\\
+		4p es un subconjunto de 3rm	& Rémiges primarias es un subconjunto de rémiges	\\
+		5s es un subconjunto de 3rm	& Rémiges primarias es un subconjunto de rémiges	\\
+		6t es un subconjunto de 3rm	& Rémiges primarias es un subconjunto de rémiges	\\
+	\end{tabular}
+\end{table}
+
+\subsection{Estado de elementos}
+
+\section{Objetivos de la entrevista}
+\begin{enumerate}[label=\Alph*]
+	\item Identificar el dominio físico y relaciones entre los elementos del mismo en cual el operador ha descrito el caso anterior.
+	\item Completar el conocimiento de modo sobre los desencadenantes de actuaciones del operador en el caso conreto descrito en la entrevista anterior.
+\end{enumerate}
+
+Fuentes de conocimiento: Experto
+
+Modo: entrevista parcialmente estructurada
+
+\section{Planteamiento de la sesión}
+\begin{itemize}
+	\item[A1] Z czego składa się pióro w celu klasyfikacji?
+	\item[A3] Jakie pomiary są pobierane w celu klasyfikacji?
+	\item[A4] Jakie kolory pióra pomagają w klasyfikacji?
+	\item[A5] Kolory których elementów pióra są istotne w klasyfikacji?
+	\item[A6] Czy są jeszcze inne istotne elementy, które pozwalają sklasyfikować pióro?
+	\item[A7] Czy płeć ma znaczenie?
+	\item[A8] Czy wiek ptaka ma znaczenie?
+	\item[B1] Najpierw należy rozpoznać typ pióra, czy gatunek?
+	\item[B2] W jaki sposób rozpoznajemy typ pióra?
+	\item[B3] W jaki sposób zawęża się grupę gatunków, do których może należeć pióro?
+\end{itemize}
+
+\section{Resultado de la sesión}
+\begin{itemize}
+	\item[A1] oś pióra = dudka+stosina, chorągiewki - zewnętrzna i wewnętrzna, puch przynasadowy (obecny / nieobecny)
+	\item[A3] długość osi pióra - tj całkowita długość wyprostowanego pióra
+	długość dudki - tj stosunek dł dudki do całkowitej długości pióra
+	\item[A4] Kolor podstawowy tła chorągiewek (1 do 3) - spod, zewnetrzna, wewnetrzna
+	Kolor stosiny (wierzch, spod) i dudki (1)
+	\item[A5] Kolor chorągiewki zewnętrznej
+	Kolor chorągiewki wewnętrznej
+	Kolor puchu (jeśli obecny)
+	Kolor stosiny i dudki z wierzchu
+	Kolor stosiny i dudki od spodu
+	Spód obu chorągiewek
+	\item[A6] Zapach - jeśli intensywny i bardzo mocny, to cecha typowa dla kormorana, oraz kruka (choć kormoran cuchnie bardziej xd)
+	Ogólnie na co patrzeć oprócz rodzaju pióra, jego długości i długości dudki. Warto patrzeć na masywność / delikatność dudki i stosiny, masywność / delikatność chorągiewek w dotyku, ew ich półprzezroczystość, obecność puchu przynasadowego i jego kolor, a także ogólną elastyczność / twardość / miękkość całego pióra, tak chorągiewek, jak i osi. Więcej info w opisach gatunków. Chyba tyle xd
+	\item[A7] Tak, ale zależy od gatunku.
+	\item[A8] Tak, ale zależy od gatunku (będzie zaznaczone przy konkretnych gatunkach)
+	\item[B1] Łoczywiście, że typ pióra! Dla przykładu, kruk i kawka mają pióra tak samo czarne i takiej samej struktury w dotyku. I dla przykładu mamy 10 cm pióra. Jeśli to lotka II rz, no to kawka, jeśli to pokrywa II rz duża, no to kruk
+	\item[B2] Patrzymy na kształt stosiny i kształt wierzchołka pióra i długość dudki (są pewne różnice międzygatunkowe, ale w obrębie jednego osobnika schemat się powtarza)
+	\item[B3] Zaczynamy od cech charakterystycznych. To na podstawie tych ogólnych cech, które są najlepiej opisane w tabeli. Patrzysz na ogólny charakter pióra i przypasowujesz go do grupy, jednej z tych 15 czy ilu tam mi wyszło. To chyba jedyny sposób, tu już trzeba niestety te cechy po kolei sprawdzić, jak ogólnie pióro się miewa, a potem się człowiek wdraża w szczegóły by rozpoznać konkretne gatunki. Przydają się też te cechy charakterystyczne w przypadku wybranych grup, bo pozwalają to mega szybko zawęzić :P ogólnie to temat dotyczy klucza do id piór, za którego tworzenie powoli się zabrałam ostatnio i rozmknia jest niezła, mam za dużo expa i dla mnie wszystkie pióra są już zbyt różne, choć wiem,  że “teoretycznie wiele z nich” można by wsadzić do mniejszego lub większego worka xp No… generalnie pacz do tabeli
+\end{itemize}
+
+\section{Plan de análisis}
+\begin{enumerate}
+	\item Identificación de términos
+	\item Identificación del dominio de elementos
+	\item Generación de glosario
+	\item Identificación de relaciones entre elementos
+\end{enumerate}
+Los términos son características físicas de plumas.
+
+\section{Resultados del análisis}
+
+\end{document}
