@@ -284,4 +284,5 @@ TSWLatexianTemp*
 #*Notes.bib
 ENTRVISTA_Ejemplo.pdf
 .~lock*
+.ipynb_checkpoints
 
