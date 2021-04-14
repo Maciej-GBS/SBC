@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{float}
+\usepackage{multirow}
 
 %opening
 \title{Conceptualización\\ \normalsize{Clasificador de plumas}}
@@ -15,11 +16,35 @@
 \section{Diccionario de los conceptos}
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|l|l|l|}
+	\begin{tabular}{|l|l|p{0.3\linewidth}|l|}
 		\hline
-		OBJETO	& ATRIBUTO	& VALOR \\
-		\hline
+		ATRIBUTO    & SÍMBOLO & DESCRIPCIÓN                                   & VALOR           \\ \hline\hline
+		Massivness  & M       & Thickness of the calamus                      & $\{1,2,3,4,5\}$ \\ \hline
+		Flexibility & T       & Overall feather flexibility                   & $\{1,2,3,4,5\}$ \\ \hline
+		Length      & D       & Proportion of the calamus to feather length   & $\{1,2,3\}$     \\ \hline
+		Width       & S       & Proportion of maximum width to feather length & $\{1,2,3\}$     \\ \hline
 	\end{tabular}
+	\caption{Propiedades comunes entre tratados tipos de plumas.}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		ATRIBUTO                    & SÍMBOLO            & VALOR & ALCANCE       \\ \hline\hline
+		\multirow{5}{*}{Massivness} & \multirow{5}{*}{M} & 1     & $(0.5;2)$ mm  \\ \cline{3-4}
+		                            &                    & 2     & $(2;5)$ mm    \\ \cline{3-4}
+		                            &                    & 3     & $(5;7)$ mm    \\ \cline{3-4}
+		                            &                    & 4     & $(7;9)$ mm    \\ \cline{3-4}
+		                            &                    & 5     & $(9;12)$ mm   \\ \hline\hline
+		\multirow{3}{*}{Length}     & \multirow{3}{*}{D} & 1     & $(0.05;0.15)$ \\ \cline{3-4}
+		                            &                    & 2     & $(0.15;0.25)$ \\ \cline{3-4}
+		                            &                    & 3     & $(0.25;0.35)$ \\ \hline\hline
+		\multirow{3}{*}{Width}      & \multirow{3}{*}{S} & 1     & $(0.01;0.05)$ \\ \cline{3-4}
+		                            &                    & 2     & $(0.05;0.2)$  \\ \cline{3-4}
+		                            &                    & 3     & $(0.2;0.3)$   \\ \hline
+	\end{tabular}
+	\caption{El alcance de los valores posibles de los propiedades.}
 \end{table}
 
 \section{Modelo de proceso}
