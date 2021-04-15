@@ -16,20 +16,21 @@
 \section{Diccionario de los conceptos}
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|l|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+	\begin{tabular}{|p{0.2\linewidth}|p{0.15\linewidth}|p{0.25\linewidth}|p{0.4\linewidth}|}
 		\hline
-		ATRIBUTO                 & SÍMBOLO & DESCRIPCIÓN                                   & VALOR           \\ \hline\hline
-		Massivness               & M       & Thickness of the calamus                      & $\{1,2,3,4,5\}$ \\ \hline
-		Flexibility              & T       & Overall feather flexibility                   & $\{1,2,3,4,5\}$ \\ \hline
-		Length                   & D       & Proportion of the calamus to feather length   & $\{1,2,3\}$     \\ \hline
-		Width                    & S       & Proportion of maximum width to feather length & $\{1,2,3\}$     \\ \hline
-		Feather length           & FL      & The length of the feather (straightened)      & $(50;570) mm$   \\ \hline
-		Colour of calamus        & CC      & Self explanatory.                             & $()$            \\ \hline
-		Colour of inner vane     & CIV     & Self explanatory.                             & $()$            \\ \hline
-		Colour of outer vane     & COV     & Self explanatory.                             & $()$            \\ \hline
-		Colour of rachis (under) & CRL     & Self explanatory.                             & $()$            \\ \hline
-		Colour of rachis (upper) & CRU     & Self explanatory.                             & $()$            \\ \hline
-		Colour of upper vanes    & CRUP    & Self explanatory.                             & \{'black', 'white lightgrey', 'lightgrey white', 'grey black white', 'lightgrey', 'white black brown stripes', 'white black', 'white stripes', 'white brown stripes', 'grey brown', 'brown grey', 'black brown', 'black brown stripes', 'grey black', 'grey', 'lightgrey darkgrey', 'lightgrey grey darkgrey black ragged', 'white', 'white grey', 'black brown ~stripes', 'grey white'\}            \\ \hline
+		ATRIBUTO                 & SÍMBOLO & DESCRIPCIÓN                                   & VALOR                                                                                                                                  \\ \hline\hline
+		Massivness               & M       & Thickness of the calamus                      & $\{1,2,3,4,5\}$                                                                                                                        \\ \hline
+		Flexibility              & T       & Overall feather flexibility                   & $\{1,2,3,4,5\}$                                                                                                                        \\ \hline
+		Length                   & D       & Proportion of the calamus to feather length   & $\{1,2,3\}$                                                                                                                            \\ \hline
+		Width                    & S       & Proportion of maximum width to feather length & $\{1,2,3\}$                                                                                                                            \\ \hline
+		Feather length           & FL      & The length of the feather (straightened)      & $(50;570) mm$                                                                                                                          \\ \hline
+		Colour of calamus        & CC      & Self explanatory.                             & \{'grey', 'lightgrey', 'brown', 'yellow', 'darkgrey', 'white'\}                                                                        \\ \hline
+		Colour of inner vane     & CIV     & Self explanatory.                             & \{'black', 'grey', 'brown', 'ragged', 'darkgrey', 'white', 'glossy', 'lightgrey', 'stripes', 'darkbrown'\}                             \\ \hline
+		Colour of outer vane     & COV     & Self explanatory.                             & \{'black', 'grey', 'brown', 'yellow', 'ragged', 'darkgrey', 'white', 'glossy', 'orange', 'lightgrey', 'stripes', 'pink', 'darkbrown'\} \\ \hline
+		Colour of rachis (under) & CRL     & Self explanatory.                             & \{'black', 'grey', 'lightgrey', 'brown', 'white'\}                                                                                     \\ \hline
+		Colour of rachis (upper) & CRU     & Self explanatory.                             & \{'black', 'grey', 'lightgrey', 'brown', 'darkgrey', 'white'\}                                                                         \\ \hline
+		Colour of upper vanes    & CRUP    & Self explanatory.                             & \{'black', 'grey', 'brown', 'ragged', 'darkgrey', 'white', 'lightgrey', 'stripes'\}                                                    \\ \hline
+%		C & C & Self explanatory. & \{\} \\ \hline
 	\end{tabular}
 	\caption{Propiedades comunes entre tratados tipos de plumas.}
 \end{table}
@@ -59,6 +60,20 @@
 La meta del proceso es analizar y clasificar una pluma. Queremos reconocer el especie del pájaro.
 
 \subsection{Entradas necesarias}
+Las siguientes entradas no se puede inferir, sino a veces no todos son necesarias para clasificar bien.
+\begin{itemize}
+	\item M -- Massivness
+	\item T -- Flexibility
+	\item D -- Length
+	\item S -- Width
+	\item FL -- Feather length
+	\item CC -- Colour of calamus
+	\item CIV -- Colour of inner vane
+	\item COV -- Colour of outer vane
+	\item CRL -- Colour of rachis (under)
+	\item CRU -- Colour of rachis (upper)
+	\item CRUP -- Colour of upper vanes
+\end{itemize}
 
 \subsection{Salidas producidas}
 La salida producida es el tipo de pluma y el especie de cual la venga.
