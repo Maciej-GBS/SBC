@@ -16,13 +16,20 @@
 \section{Diccionario de los conceptos}
 \begin{table}[H]
 	\centering
-	\begin{tabular}{|l|l|p{0.3\linewidth}|l|}
+	\begin{tabular}{|l|l|p{0.3\linewidth}|p{0.3\linewidth}|}
 		\hline
-		ATRIBUTO    & SÍMBOLO & DESCRIPCIÓN                                   & VALOR           \\ \hline\hline
-		Massivness  & M       & Thickness of the calamus                      & $\{1,2,3,4,5\}$ \\ \hline
-		Flexibility & T       & Overall feather flexibility                   & $\{1,2,3,4,5\}$ \\ \hline
-		Length      & D       & Proportion of the calamus to feather length   & $\{1,2,3\}$     \\ \hline
-		Width       & S       & Proportion of maximum width to feather length & $\{1,2,3\}$     \\ \hline
+		ATRIBUTO                 & SÍMBOLO & DESCRIPCIÓN                                   & VALOR           \\ \hline\hline
+		Massivness               & M       & Thickness of the calamus                      & $\{1,2,3,4,5\}$ \\ \hline
+		Flexibility              & T       & Overall feather flexibility                   & $\{1,2,3,4,5\}$ \\ \hline
+		Length                   & D       & Proportion of the calamus to feather length   & $\{1,2,3\}$     \\ \hline
+		Width                    & S       & Proportion of maximum width to feather length & $\{1,2,3\}$     \\ \hline
+		Feather length           & FL      & The length of the feather (straightened)      & $(50;570) mm$   \\ \hline
+		Colour of calamus        & CC      & Self explanatory.                             & $()$            \\ \hline
+		Colour of inner vane     & CIV     & Self explanatory.                             & $()$            \\ \hline
+		Colour of outer vane     & COV     & Self explanatory.                             & $()$            \\ \hline
+		Colour of rachis (under) & CRL     & Self explanatory.                             & $()$            \\ \hline
+		Colour of rachis (upper) & CRU     & Self explanatory.                             & $()$            \\ \hline
+		Colour of upper vanes    & CRUP    & Self explanatory.                             & \{'black', 'white lightgrey', 'lightgrey white', 'grey black white', 'lightgrey', 'white black brown stripes', 'white black', 'white stripes', 'white brown stripes', 'grey brown', 'brown grey', 'black brown', 'black brown stripes', 'grey black', 'grey', 'lightgrey darkgrey', 'lightgrey grey darkgrey black ragged', 'white', 'white grey', 'black brown ~stripes', 'grey white'\}            \\ \hline
 	\end{tabular}
 	\caption{Propiedades comunes entre tratados tipos de plumas.}
 \end{table}
@@ -44,7 +51,7 @@
 		                            &                    & 2     & $(0.05;0.2)$  \\ \cline{3-4}
 		                            &                    & 3     & $(0.2;0.3)$   \\ \hline
 	\end{tabular}
-	\caption{El alcance de los valores posibles de los propiedades.}
+	\caption{El diccionario de escalas sobre las propiedades.}
 \end{table}
 
 \section{Modelo de proceso}
