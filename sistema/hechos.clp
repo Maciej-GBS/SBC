@@ -1,0 +1,12 @@
+(deffacts facts_example
+	(massivness )
+	(flexibility )
+	(length )
+	(width )
+	(feather_length )
+    (colour_calamus )
+    (colour_vane_inner )
+    (colour_vane_outer )
+    (colour_rachis_lower )
+    (colour_rachis_upper )
+    (colour_vanes_upper ))
