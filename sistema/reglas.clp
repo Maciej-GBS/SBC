@@ -32,3 +32,84 @@
 	(
 	)
 )
+
+(deftemplate color-wb
+	0 6
+	(
+        (white (0 1) (2 0))
+        (lightgris (0 0.5) (1 1) (3 0))
+        (lightgrey (0 0) (2 1) (4 0))
+        (gris (1 0) (3 1) (5 0))
+        (grey (2 0) (4 1) (6 0))
+        (darkgrey (3 0) (5 1) (6 0.5))
+        (black (4 0) (6 1))
+	)
+)
+
+(deftemplate color-brown
+	0 2
+	(
+        (lightbrown (0 1) (2 0))
+        (brown (0 0.5) (1 1) (2 0.5))
+        (darkbrown (0 0) (2 1))
+	)
+)
+
+(deftemplate color-orange
+	0 1
+	(
+        (lightorange (0 1) (1 0.5))
+        (orange (0 0.5) (1 1))
+	)
+)
+
+(deftemplate color-yellow
+	0 1
+	(
+        (lightyellow (0 1) (1 0.5))
+        (yellow (0 0.5) (1 1))
+	)
+)
+
+(defrule rule-color-wb
+    (or (color white) (color lightgris) (color lightgrey) (color gris) (color grey) (color darkgrey) (color black))
+	(color ?c)
+=>
+	(assert (color-wb ?c))
+)
+
+(defrule rule-color-brown
+    (or (color lightbrown) (color brown) (color darkbrown))
+    (color ?c)
+=>
+    (assert (color-brown ?c))
+)
+
+(defrule rule-color-orange
+    (or (color lightorange) (color orange))
+    (color ?c)
+=>
+    (assert (color-orange ?c))
+)
+
+(defrule rule-color-yellow
+    (or (color lightyellow) (color yellow))
+    (color ?c)
+=>
+    (assert (color-yellow ?c))
+)
+
+;pink
+;glossy
+
+;weak-stripes
+;stripes
+;wide-stripes
+
+(defrule rule-xd
+	(declare (CF 0.5))
+	(length ?l)
+	(test (< ?l 350))
+=>
+	(assert (xd))
+)
