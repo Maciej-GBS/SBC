@@ -33,8 +33,8 @@
 	)
 )
 
-(deftemplate color-wb
-	0 6
+(deftemplate color-scale
+	0 14
 	(
         (white (0 1) (2 0))
         (lightgris (0 0.5) (1 1) (3 0))
@@ -42,64 +42,28 @@
         (gris (1 0) (3 1) (5 0))
         (grey (2 0) (4 1) (6 0))
         (darkgrey (3 0) (5 1) (6 0.5))
-        (black (4 0) (6 1))
+        (black (4 0) (6 1) (7 0))
+
+        (darkbrown (6 0) (7 1) (9 0))
+        (brown (6 0) (8 1) (10 0))
+        (lightbrown (7 0) (9 1) (10 0))
+
+        (orange (9 0) (10 1) (12 0))
+        (lightorange (9 0) (11 1) (12 0))
+
+        (yellow (11 0) (12 1) (14 0))
+        (lightyellow (11 0) (13 1) (14 0))
+
+        (pink (13 0) (14 1))
 	)
 )
 
-(deftemplate color-brown
-	0 2
-	(
-        (lightbrown (0 1) (2 0))
-        (brown (0 0.5) (1 1) (2 0.5))
-        (darkbrown (0 0) (2 1))
-	)
-)
-
-(deftemplate color-orange
-	0 1
-	(
-        (lightorange (0 1) (1 0.5))
-        (orange (0 0.5) (1 1))
-	)
-)
-
-(deftemplate color-yellow
-	0 1
-	(
-        (lightyellow (0 1) (1 0.5))
-        (yellow (0 0.5) (1 1))
-	)
-)
-
-(defrule rule-color-wb
-    (or (color white) (color lightgris) (color lightgrey) (color gris) (color grey) (color darkgrey) (color black))
+(defrule rule-color-scale
 	(color ?c)
 =>
-	(assert (color-wb ?c))
+	(assert (color-scale ?c))
 )
 
-(defrule rule-color-brown
-    (or (color lightbrown) (color brown) (color darkbrown))
-    (color ?c)
-=>
-    (assert (color-brown ?c))
-)
-
-(defrule rule-color-orange
-    (or (color lightorange) (color orange))
-    (color ?c)
-=>
-    (assert (color-orange ?c))
-)
-
-(defrule rule-color-yellow
-    (or (color lightyellow) (color yellow))
-    (color ?c)
-=>
-    (assert (color-yellow ?c))
-)
-
-;pink
 ;glossy
 
 ;weak-stripes
