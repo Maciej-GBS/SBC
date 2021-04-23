@@ -143,12 +143,23 @@
 	)
 )
 
-CHANGE THIS!!! \/
-
-(defrule rule-color-scale
-	(color ?c)
-=>
-	(assert (color-scale ?c))
+(deftemplate calamus
+    (slot color (type FUZZY-VALUE color-scale))
+)
+(deftemplate vane-inner
+    (slot color (type FUZZY-VALUE color-scale))
+)
+(deftemplate vane-outer
+    (slot color (type FUZZY-VALUE color-scale))
+)
+(deftemplate vanes-upper
+    (slot color (type FUZZY-VALUE color-scale))
+)
+(deftemplate rachis-lower
+    (slot color (type FUZZY-VALUE color-scale))
+)
+(deftemplate rachis-upper
+    (slot color (type FUZZY-VALUE color-scale))
 )
 
 (defrule rule-xd
