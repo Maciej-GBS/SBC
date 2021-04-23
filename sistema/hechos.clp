@@ -1,13 +1,17 @@
 (deffacts facts_example
-	(M (1.2 0) (1.2 1) (1.2 0))
+	(M (pi 0 1.2)) ; (1.2 0) (1.2 1) (1.2 0)
 	(T 5) CF 0.8
-	(D (0.17 0) (0.17 1) (0.17 0))
+	(D (pi 0 0.16))
 	(S (pi 0 0.09))
-	(length (pi 0 120))
+	(length 120)
     (calamus )
     (vane-inner )
     (vane-outer )
+    (vanes-upper )
+    (stripes visible)
     (rachis-lower )
     (rachis-upper )
-    (vanes-upper )
+    (rachis-lower-stripped) CF 0.7
+    (rachis-upper-stripped) CF 0.7
+    (glossy) CF 0.9
 )
