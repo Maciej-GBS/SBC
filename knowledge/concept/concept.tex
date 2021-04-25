@@ -32,8 +32,8 @@ El sistema va a tratar los siguientes grupos de pájaros:
 
 \section{Diccionario de los conceptos}
 \begin{table}[H]
-	%\centering
-	\begin{tabular}{|p{0.2\linewidth}|p{0.15\linewidth}|p{0.25\linewidth}|p{0.45\linewidth}|}
+	\centering
+	\begin{tabular}{|p{0.2\linewidth}|p{0.15\linewidth}|p{0.25\linewidth}|p{0.4\linewidth}|}
 		\hline
 		ATRIBUTO       & SÍMBOLO      & DESCRIPCIÓN                                   & VALOR                                                                                                                                                                                                                           \\ \hline\hline
 		Massivness     & M            & Thickness of the calamus                      & $(0.5;12)$ mm                                                                                                                                                                                                                 \\ \hline
@@ -41,26 +41,33 @@ El sistema va a tratar los siguientes grupos de pájaros:
 		Length         & D            & Proportion of the calamus to feather length   & $(0.05;0.35)$                                                                                                                                                                                                                     \\ \hline
 		Width          & S            & Proportion of maximum width to feather length & $(0.01;0.3)$                                                                                                                                                                                                                     \\ \hline
 		Feather length & length       & The length of the feather (straightened)      & $(35;570)$ mm                                                                                                                                                                                                                   \\ \hline
-		Calamus        & calamus      & Colours.                                      & \{'brown', 'darkgrey', 'grey', 'lightgrey', 'white', 'yellow'\}                                                                                                                                                                 \\ \hline
-		Inner vane     & vane-inner   & Colours and characteristics.                  & \{'black', 'brown', 'darkbrown', 'darkgrey', 'glossy', 'grey', 'gris', 'lightbrown', 'lightgrey', 'lightgris', 'lightorange', 'lightyellow', 'orange', 'stripes', 'weak-stripes', 'white', 'wide-stripes', 'yellow'\} \\ \hline
-		Outer vane     & vane-outer   & Colours and characteristics.                  & \{'black', 'brown', 'darkbrown', 'darkgrey', 'glossy', 'grey', 'gris', 'lightbrown', 'lightgrey', 'lightorange', 'lightyellow', 'orange', 'pink', 'stripes', 'weak-stripes', 'white', 'wide-stripes', 'yellow'\}      \\ \hline
-		Rachis (lower) & rachis-lower & Colours.                                      & \{'black', 'brown', 'darkgrey', 'grey', 'lightgrey', 'stripes', 'white'\}                                                                                                                                                       \\ \hline
-		Rachis (upper) & rachis-upper & Colours and characteristics.                  & \{'black', 'brown', 'darkbrown', 'darkgrey', 'grey', 'lightbrown', 'lightgrey', 'stripes', 'white'\}                                                                                                                            \\ \hline
-		Upper vanes    & vanes-upper  & Colours and characteristics.                  & \{'black', 'brown', 'darkbrown', 'darkgrey', 'grey', 'lightbrown', 'lightgrey', 'lightgris', 'lightyellow', 'stripes', 'weak-stripes', 'white', 'wide-stripes'\}                                                      \\ \hline
+		Calamus        & calamus      & Colours.                                      & \small \{'brown', 'darkgrey', 'grey', 'lightgrey', 'white', 'yellow'\}                                                                                                                                                                 \\ \hline
+		Inner vane     & vane-inner   & Colours and characteristics.                  & \small \{'black', 'brown', 'darkbrown', 'darkgrey', 'glossy', 'grey', 'gris', 'lightbrown', 'lightgrey', 'lightgris', 'lightorange', 'lightyellow', 'orange', 'white', 'yellow'\} \\ \hline
+		Outer vane     & vane-outer   & Colours and characteristics.                  & \small \{'black', 'brown', 'darkbrown', 'darkgrey', 'glossy', 'grey', 'gris', 'lightbrown', 'lightgrey', 'lightorange', 'lightyellow', 'orange', 'pink', 'white', 'yellow'\}      \\ \hline
+		Rachis (lower) & rachis-lower & Colours.                                      & \small \{'black', 'brown', 'darkgrey', 'grey', 'lightgrey', 'white'\}                                                                                                                                                       \\ \hline
+		Rachis (upper) & rachis-upper & Colours and characteristics.                  & \small \{'black', 'brown', 'darkbrown', 'darkgrey', 'grey', 'lightbrown', 'lightgrey', 'white'\}                                                                                                                            \\ \hline
+		Upper vanes    & vanes-upper  & Colours and characteristics.                  & \small \{'black', 'brown', 'darkbrown', 'darkgrey', 'grey', 'lightbrown', 'lightgrey', 'lightgris', 'lightyellow', 'white'\} \\ \hline
+		Stripes & stripes & Feather striping. & \{'visible', 'weak', 'wide'\} \\ \hline
+		Rachis stripes & rachis-striped & Flag whether rachis is striped. & Existent or not \\ \hline
+		Gloss & glossy & Feather vanes glossiness. & Existent or not \\ \hline
 	\end{tabular}
 	\caption{Propiedades comunes entre tratados tipos de plumas.}
 \end{table}
 
-\section{Diccionario de los conceptos}
-%\begin{table}[H]
-%	\centering
-%	\begin{tabular}{|p{0.2\linewidth}|p{0.15\linewidth}|p{0.25\linewidth}|p{0.4\linewidth}|}
-%		\hline
-%		ATRIBUTO & SÍMBOLO & DESCRIPCIÓN       & VALOR \\ \hline\hline
-%		C        & C       & Self explanatory. & \{\}  \\ \hline
-%	\end{tabular}
-%\caption{Propiedades cuales se puede inferir.}
-%\end{table}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|p{0.2\linewidth}|p{0.4\linewidth}|p{0.3\linewidth}|}
+		\hline
+		SÍMBOLO & DESCRIPCIÓN       & VALOR \\ \hline\hline
+		type-length       & Feather types matching given feather length. & feather types  \\ \hline
+		species-length       & Species matching given feather length. & species names  \\ \hline
+		species-glossy       & Species matching given glossiness. & species names  \\ \hline
+		species-rachis-striped       & Species matching rachis striping. & species names  \\ \hline
+		type-stripes       & Feather types matching striping given. & feather types  \\ \hline
+		species-stripes       & Species matching vane striping given. & species names  \\ \hline
+	\end{tabular}
+\caption{Propiedades intermedios.}
+\end{table}
 
 \begin{table}[H]
 	\centering
