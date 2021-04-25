@@ -561,3 +561,31 @@
     (printout t "Feather gloss may indicate corvus-corax" crlf)
     (assert (species-glossy corvus-corax))
 )
+
+(defrule rule-rachis-accipiter-gentilis-young
+    (rachis-striped)
+=>
+    (printout t "Rachis stripes may indicate accipiter-gentilis-young" crlf)
+    (assert (species-rachis-striped accipiter-gentilis-young))
+)
+
+(defrule rule-rachis-accipiter-gentilis-adult
+    (rachis-striped)
+=>
+    (printout t "Rachis stripes may indicate accipiter-gentilis-adult" crlf)
+    (assert (species-rachis-striped accipiter-gentilis-adult))
+)
+
+(defrule rule-rachis-accipiter-nisus-male
+    (rachis-striped)
+=>
+    (printout t "Rachis stripes may indicate accipiter-nisus-male" crlf)
+    (assert (species-rachis-striped accipiter-nisus-male))
+)
+
+(defrule rule-rachis-accipiter-nisus-female
+    (rachis-striped)
+=>
+    (printout t "Rachis stripes may indicate accipiter-nisus-female" crlf)
+    (assert (species-rachis-striped accipiter-nisus-female))
+)

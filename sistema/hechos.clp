@@ -11,7 +11,6 @@
     (rachis-lower (color white))
     (rachis-upper (color white))
     (stripes visible)
-    (rachis-lower-stripped) CF 0.7
-    (rachis-upper-stripped) CF 0.7
+    (rachis-striped) CF 0.7
     (glossy) CF 0.9
 )
