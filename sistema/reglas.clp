@@ -512,3 +512,52 @@
     (printout t "Feather length may indicate corvus-corax" crlf)
     (assert (species-length corvus-corax))
 )
+
+(defrule rule-glossy-tadorna-tadorna-adult
+    (glossy)
+=>
+    (printout t "Feather gloss may indicate tadorna-tadorna-adult" crlf)
+    (assert (species-glossy tadorna-tadorna-adult))
+)
+
+(defrule rule-glossy-anas-platyrhynchos
+    (glossy)
+=>
+    (printout t "Feather gloss may indicate anas-platyrhynchos" crlf)
+    (assert (species-glossy anas-platyrhynchos))
+)
+
+(defrule rule-glossy-anas-crecca
+    (glossy)
+=>
+    (printout t "Feather gloss may indicate anas-crecca" crlf)
+    (assert (species-glossy anas-crecca))
+)
+
+(defrule rule-glossy-plegadis-falcinellus
+    (glossy)
+=>
+    (printout t "Feather gloss may indicate plegadis-falcinellus" crlf)
+    (assert (species-glossy plegadis-falcinellus))
+)
+
+(defrule rule-glossy-corvus-monedula
+    (glossy)
+=>
+    (printout t "Feather gloss may indicate corvus-monedula" crlf)
+    (assert (species-glossy corvus-monedula))
+)
+
+(defrule rule-glossy-corvus-corone
+    (glossy)
+=>
+    (printout t "Feather gloss may indicate corvus-corone" crlf)
+    (assert (species-glossy corvus-corone))
+)
+
+(defrule rule-glossy-corvus-corax
+    (glossy)
+=>
+    (printout t "Feather gloss may indicate corvus-corax" crlf)
+    (assert (species-glossy corvus-corax))
+)
