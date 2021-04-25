@@ -162,10 +162,353 @@
     (slot color (type FUZZY-VALUE color-scale))
 )
 
-(defrule rule-xd
-	(declare (CF 0.5))
-	(length ?l)
-	(test (< ?l 350))
+(defrule rule-bylength-primaries
+    (length ?v)
+    (test (> ?v ?*min-length-primaries*))
+    (test (< ?v ?*max-length-primaries*))
 =>
-	(assert (xd))
+    (printout t "Feather length may indicate primaries" crlf)
+    (assert (length-primaries))
+)
+
+(defrule rule-bylength-secondaries
+    (length ?v)
+    (test (> ?v ?*min-length-secondaries*))
+    (test (< ?v ?*max-length-secondaries*))
+=>
+    (printout t "Feather length may indicate secondaries" crlf)
+    (assert (length-secondaries))
+)
+
+(defrule rule-bylength-tailfeathers
+    (length ?v)
+    (test (> ?v ?*min-length-tailfeathers*))
+    (test (< ?v ?*max-length-tailfeathers*))
+=>
+    (printout t "Feather length may indicate tailfeathers" crlf)
+    (assert (length-tailfeathers))
+)
+
+(defrule rule-bylength-tertiaries
+    (length ?v)
+    (test (> ?v ?*min-length-tertiaries*))
+    (test (< ?v ?*max-length-tertiaries*))
+=>
+    (printout t "Feather length may indicate tertiaries" crlf)
+    (assert (length-tertiaries))
+)
+
+(defrule rule-bylength-anser-anser
+    (length ?v)
+    (test (> ?v ?*min-length-anser-anser*))
+    (test (< ?v ?*max-length-anser-anser*))
+=>
+    (printout t "Feather length may indicate anser-anser" crlf)
+    (assert (length-anser-anser))
+)
+
+(defrule rule-bylength-tadorna-tadorna-adult
+    (length ?v)
+    (test (> ?v ?*min-length-tadorna-tadorna-adult*))
+    (test (< ?v ?*max-length-tadorna-tadorna-adult*))
+=>
+    (printout t "Feather length may indicate tadorna-tadorna-adult" crlf)
+    (assert (length-tadorna-tadorna-adult))
+)
+
+(defrule rule-bylength-tadorna-tadorna-young
+    (length ?v)
+    (test (> ?v ?*min-length-tadorna-tadorna-young*))
+    (test (< ?v ?*max-length-tadorna-tadorna-young*))
+=>
+    (printout t "Feather length may indicate tadorna-tadorna-young" crlf)
+    (assert (length-tadorna-tadorna-young))
+)
+
+(defrule rule-bylength-anas-platyrhynchos
+    (length ?v)
+    (test (> ?v ?*min-length-anas-platyrhynchos*))
+    (test (< ?v ?*max-length-anas-platyrhynchos*))
+=>
+    (printout t "Feather length may indicate anas-platyrhynchos" crlf)
+    (assert (length-anas-platyrhynchos))
+)
+
+(defrule rule-bylength-anas-crecca
+    (length ?v)
+    (test (> ?v ?*min-length-anas-crecca*))
+    (test (< ?v ?*max-length-anas-crecca*))
+=>
+    (printout t "Feather length may indicate anas-crecca" crlf)
+    (assert (length-anas-crecca))
+)
+
+(defrule rule-bylength-podiceps-cristatus
+    (length ?v)
+    (test (> ?v ?*min-length-podiceps-cristatus*))
+    (test (< ?v ?*max-length-podiceps-cristatus*))
+=>
+    (printout t "Feather length may indicate podiceps-cristatus" crlf)
+    (assert (length-podiceps-cristatus))
+)
+
+(defrule rule-bylength-phalacrocorax-carbo
+    (length ?v)
+    (test (> ?v ?*min-length-phalacrocorax-carbo*))
+    (test (< ?v ?*max-length-phalacrocorax-carbo*))
+=>
+    (printout t "Feather length may indicate phalacrocorax-carbo" crlf)
+    (assert (length-phalacrocorax-carbo))
+)
+
+(defrule rule-bylength-plegadis-falcinellus
+    (length ?v)
+    (test (> ?v ?*min-length-plegadis-falcinellus*))
+    (test (< ?v ?*max-length-plegadis-falcinellus*))
+=>
+    (printout t "Feather length may indicate plegadis-falcinellus" crlf)
+    (assert (length-plegadis-falcinellus))
+)
+
+(defrule rule-bylength-phoenicopterus-roseus
+    (length ?v)
+    (test (> ?v ?*min-length-phoenicopterus-roseus*))
+    (test (< ?v ?*max-length-phoenicopterus-roseus*))
+=>
+    (printout t "Feather length may indicate phoenicopterus-roseus" crlf)
+    (assert (length-phoenicopterus-roseus))
+)
+
+(defrule rule-bylength-ciconia-ciconia
+    (length ?v)
+    (test (> ?v ?*min-length-ciconia-ciconia*))
+    (test (< ?v ?*max-length-ciconia-ciconia*))
+=>
+    (printout t "Feather length may indicate ciconia-ciconia" crlf)
+    (assert (length-ciconia-ciconia))
+)
+
+(defrule rule-bylength-grus-grus
+    (length ?v)
+    (test (> ?v ?*min-length-grus-grus*))
+    (test (< ?v ?*max-length-grus-grus*))
+=>
+    (printout t "Feather length may indicate grus-grus" crlf)
+    (assert (length-grus-grus))
+)
+
+(defrule rule-bylength-ardea-cinerea
+    (length ?v)
+    (test (> ?v ?*min-length-ardea-cinerea*))
+    (test (< ?v ?*max-length-ardea-cinerea*))
+=>
+    (printout t "Feather length may indicate ardea-cinerea" crlf)
+    (assert (length-ardea-cinerea))
+)
+
+(defrule rule-bylength-nycticorax-nycticorax-young
+    (length ?v)
+    (test (> ?v ?*min-length-nycticorax-nycticorax-young*))
+    (test (< ?v ?*max-length-nycticorax-nycticorax-young*))
+=>
+    (printout t "Feather length may indicate nycticorax-nycticorax-young" crlf)
+    (assert (length-nycticorax-nycticorax-young))
+)
+
+(defrule rule-bylength-nycticorax-nycticorax-adult
+    (length ?v)
+    (test (> ?v ?*min-length-nycticorax-nycticorax-adult*))
+    (test (< ?v ?*max-length-nycticorax-nycticorax-adult*))
+=>
+    (printout t "Feather length may indicate nycticorax-nycticorax-adult" crlf)
+    (assert (length-nycticorax-nycticorax-adult))
+)
+
+(defrule rule-bylength-egretta-garzetta
+    (length ?v)
+    (test (> ?v ?*min-length-egretta-garzetta*))
+    (test (< ?v ?*max-length-egretta-garzetta*))
+=>
+    (printout t "Feather length may indicate egretta-garzetta" crlf)
+    (assert (length-egretta-garzetta))
+)
+
+(defrule rule-bylength-columba-livia-f-urbana
+    (length ?v)
+    (test (> ?v ?*min-length-columba-livia-f-urbana*))
+    (test (< ?v ?*max-length-columba-livia-f-urbana*))
+=>
+    (printout t "Feather length may indicate columba-livia-f-urbana" crlf)
+    (assert (length-columba-livia-f-urbana))
+)
+
+(defrule rule-bylength-columba-palumbus
+    (length ?v)
+    (test (> ?v ?*min-length-columba-palumbus*))
+    (test (< ?v ?*max-length-columba-palumbus*))
+=>
+    (printout t "Feather length may indicate columba-palumbus" crlf)
+    (assert (length-columba-palumbus))
+)
+
+(defrule rule-bylength-aquila-chrysaetos-adult
+    (length ?v)
+    (test (> ?v ?*min-length-aquila-chrysaetos-adult*))
+    (test (< ?v ?*max-length-aquila-chrysaetos-adult*))
+=>
+    (printout t "Feather length may indicate aquila-chrysaetos-adult" crlf)
+    (assert (length-aquila-chrysaetos-adult))
+)
+
+(defrule rule-bylength-aquila-chrysaetos-young
+    (length ?v)
+    (test (> ?v ?*min-length-aquila-chrysaetos-young*))
+    (test (< ?v ?*max-length-aquila-chrysaetos-young*))
+=>
+    (printout t "Feather length may indicate aquila-chrysaetos-young" crlf)
+    (assert (length-aquila-chrysaetos-young))
+)
+
+(defrule rule-bylength-circaetus-gallicus-young
+    (length ?v)
+    (test (> ?v ?*min-length-circaetus-gallicus-young*))
+    (test (< ?v ?*max-length-circaetus-gallicus-young*))
+=>
+    (printout t "Feather length may indicate circaetus-gallicus-young" crlf)
+    (assert (length-circaetus-gallicus-young))
+)
+
+(defrule rule-bylength-circaetus-gallicus-adult
+    (length ?v)
+    (test (> ?v ?*min-length-circaetus-gallicus-adult*))
+    (test (< ?v ?*max-length-circaetus-gallicus-adult*))
+=>
+    (printout t "Feather length may indicate circaetus-gallicus-adult" crlf)
+    (assert (length-circaetus-gallicus-adult))
+)
+
+(defrule rule-bylength-buteo-buteo-young
+    (length ?v)
+    (test (> ?v ?*min-length-buteo-buteo-young*))
+    (test (< ?v ?*max-length-buteo-buteo-young*))
+=>
+    (printout t "Feather length may indicate buteo-buteo-young" crlf)
+    (assert (length-buteo-buteo-young))
+)
+
+(defrule rule-bylength-buteo-buteo-adult
+    (length ?v)
+    (test (> ?v ?*min-length-buteo-buteo-adult*))
+    (test (< ?v ?*max-length-buteo-buteo-adult*))
+=>
+    (printout t "Feather length may indicate buteo-buteo-adult" crlf)
+    (assert (length-buteo-buteo-adult))
+)
+
+(defrule rule-bylength-circus-pygargus-male
+    (length ?v)
+    (test (> ?v ?*min-length-circus-pygargus-male*))
+    (test (< ?v ?*max-length-circus-pygargus-male*))
+=>
+    (printout t "Feather length may indicate circus-pygargus-male" crlf)
+    (assert (length-circus-pygargus-male))
+)
+
+(defrule rule-bylength-circus-pygargus-female
+    (length ?v)
+    (test (> ?v ?*min-length-circus-pygargus-female*))
+    (test (< ?v ?*max-length-circus-pygargus-female*))
+=>
+    (printout t "Feather length may indicate circus-pygargus-female" crlf)
+    (assert (length-circus-pygargus-female))
+)
+
+(defrule rule-bylength-accipiter-gentilis-young
+    (length ?v)
+    (test (> ?v ?*min-length-accipiter-gentilis-young*))
+    (test (< ?v ?*max-length-accipiter-gentilis-young*))
+=>
+    (printout t "Feather length may indicate accipiter-gentilis-young" crlf)
+    (assert (length-accipiter-gentilis-young))
+)
+
+(defrule rule-bylength-accipiter-gentilis-adult
+    (length ?v)
+    (test (> ?v ?*min-length-accipiter-gentilis-adult*))
+    (test (< ?v ?*max-length-accipiter-gentilis-adult*))
+=>
+    (printout t "Feather length may indicate accipiter-gentilis-adult" crlf)
+    (assert (length-accipiter-gentilis-adult))
+)
+
+(defrule rule-bylength-accipiter-nisus-male
+    (length ?v)
+    (test (> ?v ?*min-length-accipiter-nisus-male*))
+    (test (< ?v ?*max-length-accipiter-nisus-male*))
+=>
+    (printout t "Feather length may indicate accipiter-nisus-male" crlf)
+    (assert (length-accipiter-nisus-male))
+)
+
+(defrule rule-bylength-accipiter-nisus-female
+    (length ?v)
+    (test (> ?v ?*min-length-accipiter-nisus-female*))
+    (test (< ?v ?*max-length-accipiter-nisus-female*))
+=>
+    (printout t "Feather length may indicate accipiter-nisus-female" crlf)
+    (assert (length-accipiter-nisus-female))
+)
+
+(defrule rule-bylength-tyto-alba
+    (length ?v)
+    (test (> ?v ?*min-length-tyto-alba*))
+    (test (< ?v ?*max-length-tyto-alba*))
+=>
+    (printout t "Feather length may indicate tyto-alba" crlf)
+    (assert (length-tyto-alba))
+)
+
+(defrule rule-bylength-asio-otus
+    (length ?v)
+    (test (> ?v ?*min-length-asio-otus*))
+    (test (< ?v ?*max-length-asio-otus*))
+=>
+    (printout t "Feather length may indicate asio-otus" crlf)
+    (assert (length-asio-otus))
+)
+
+(defrule rule-bylength-strix-aluco
+    (length ?v)
+    (test (> ?v ?*min-length-strix-aluco*))
+    (test (< ?v ?*max-length-strix-aluco*))
+=>
+    (printout t "Feather length may indicate strix-aluco" crlf)
+    (assert (length-strix-aluco))
+)
+
+(defrule rule-bylength-corvus-monedula
+    (length ?v)
+    (test (> ?v ?*min-length-corvus-monedula*))
+    (test (< ?v ?*max-length-corvus-monedula*))
+=>
+    (printout t "Feather length may indicate corvus-monedula" crlf)
+    (assert (length-corvus-monedula))
+)
+
+(defrule rule-bylength-corvus-corone
+    (length ?v)
+    (test (> ?v ?*min-length-corvus-corone*))
+    (test (< ?v ?*max-length-corvus-corone*))
+=>
+    (printout t "Feather length may indicate corvus-corone" crlf)
+    (assert (length-corvus-corone))
+)
+
+(defrule rule-bylength-corvus-corax
+    (length ?v)
+    (test (> ?v ?*min-length-corvus-corax*))
+    (test (< ?v ?*max-length-corvus-corax*))
+=>
+    (printout t "Feather length may indicate corvus-corax" crlf)
+    (assert (length-corvus-corax))
 )
