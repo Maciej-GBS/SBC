@@ -4050,3 +4050,15 @@
     (assert (type tertiaries))
     (printout t "Species recognized corvus-corax by feather of type tertiaries" crlf)
 )
+
+(defrule rule-type-final
+    (type ?t)
+=>
+    (printout t "Feather type recognized: " ?t crlf)
+)
+
+(defrule rule-species-final
+    (species ?s)
+=>
+    (printout t "Species recognized: " ?s crlf)
+)
