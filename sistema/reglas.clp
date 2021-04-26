@@ -582,14 +582,6 @@
 
     (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
     (assert (species-stripes buteo-buteo-young))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
-    (assert (species-stripes buteo-buteo-young))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
-    (assert (species-stripes buteo-buteo-young))
     (assert (type-stripes tailfeathers))
 
     (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
@@ -598,14 +590,6 @@
 
     (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
     (assert (species-stripes buteo-buteo-adult))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
-    (assert (species-stripes buteo-buteo-adult))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
-    (assert (species-stripes buteo-buteo-adult))
     (assert (type-stripes tailfeathers))
 
     (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
@@ -620,14 +604,6 @@
     (assert (species-stripes circus-pygargus-male))
     (assert (type-stripes secondaries))
 
-    (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
-    (assert (species-stripes circus-pygargus-male))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
-    (assert (species-stripes circus-pygargus-male))
-    (assert (type-stripes tertiaries))
-
     (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
     (assert (species-stripes circus-pygargus-female))
     (assert (type-stripes primaries))
@@ -636,45 +612,9 @@
     (assert (species-stripes circus-pygargus-female))
     (assert (type-stripes secondaries))
 
-    (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
-    (assert (species-stripes circus-pygargus-female))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
-    (assert (species-stripes circus-pygargus-female))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-young" crlf)
-    (assert (species-stripes accipiter-gentilis-young))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-young" crlf)
-    (assert (species-stripes accipiter-gentilis-young))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-young" crlf)
-    (assert (species-stripes accipiter-gentilis-young))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-young" crlf)
-    (assert (species-stripes accipiter-gentilis-young))
-    (assert (type-stripes tertiaries))
-
     (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
     (assert (species-stripes accipiter-gentilis-adult))
     (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
-    (assert (species-stripes accipiter-gentilis-adult))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
-    (assert (species-stripes accipiter-gentilis-adult))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
-    (assert (species-stripes accipiter-gentilis-adult))
-    (assert (type-stripes tertiaries))
 
     (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
     (assert (species-stripes accipiter-nisus-male))
@@ -688,10 +628,6 @@
     (assert (species-stripes accipiter-nisus-male))
     (assert (type-stripes tailfeathers))
 
-    (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
-    (assert (species-stripes accipiter-nisus-male))
-    (assert (type-stripes tertiaries))
-
     (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
     (assert (species-stripes accipiter-nisus-female))
     (assert (type-stripes primaries))
@@ -704,10 +640,6 @@
     (assert (species-stripes accipiter-nisus-female))
     (assert (type-stripes tailfeathers))
 
-    (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
-    (assert (species-stripes accipiter-nisus-female))
-    (assert (type-stripes tertiaries))
-
     (printout t "Vanes stripes may indicate tyto-alba" crlf)
     (assert (species-stripes tyto-alba))
     (assert (type-stripes primaries))
@@ -719,14 +651,6 @@
     (printout t "Vanes stripes may indicate tyto-alba" crlf)
     (assert (species-stripes tyto-alba))
     (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate asio-otus" crlf)
-    (assert (species-stripes asio-otus))
-    (assert (type-stripes primaries))
 
     (printout t "Vanes stripes may indicate asio-otus" crlf)
     (assert (species-stripes asio-otus))
@@ -747,51 +671,11 @@
     (printout t "Vanes stripes may indicate strix-aluco" crlf)
     (assert (species-stripes strix-aluco))
     (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate strix-aluco" crlf)
-    (assert (species-stripes strix-aluco))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate strix-aluco" crlf)
-    (assert (species-stripes strix-aluco))
-    (assert (type-stripes tertiaries))
 )
 
 (defrule rule-stripes
     (stripes weak)
 =>
-    (printout t "Vanes stripes may indicate aquila-chrysaetos-adult" crlf)
-    (assert (species-stripes aquila-chrysaetos-adult))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate aquila-chrysaetos-adult" crlf)
-    (assert (species-stripes aquila-chrysaetos-adult))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate aquila-chrysaetos-adult" crlf)
-    (assert (species-stripes aquila-chrysaetos-adult))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate aquila-chrysaetos-adult" crlf)
-    (assert (species-stripes aquila-chrysaetos-adult))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate circaetus-gallicus-young" crlf)
-    (assert (species-stripes circaetus-gallicus-young))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate circaetus-gallicus-young" crlf)
-    (assert (species-stripes circaetus-gallicus-young))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate circaetus-gallicus-young" crlf)
-    (assert (species-stripes circaetus-gallicus-young))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate circaetus-gallicus-young" crlf)
-    (assert (species-stripes circaetus-gallicus-young))
-    (assert (type-stripes tertiaries))
-
     (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
     (assert (species-stripes buteo-buteo-young))
     (assert (type-stripes primaries))
@@ -799,14 +683,6 @@
     (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
     (assert (species-stripes buteo-buteo-young))
     (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
-    (assert (species-stripes buteo-buteo-young))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
-    (assert (species-stripes buteo-buteo-young))
-    (assert (type-stripes tertiaries))
 
     (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
     (assert (species-stripes buteo-buteo-adult))
@@ -816,41 +692,9 @@
     (assert (species-stripes buteo-buteo-adult))
     (assert (type-stripes secondaries))
 
-    (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
-    (assert (species-stripes buteo-buteo-adult))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
-    (assert (species-stripes buteo-buteo-adult))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
-    (assert (species-stripes circus-pygargus-male))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
-    (assert (species-stripes circus-pygargus-male))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
-    (assert (species-stripes circus-pygargus-male))
-    (assert (type-stripes tailfeathers))
-
     (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
     (assert (species-stripes circus-pygargus-male))
     (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
-    (assert (species-stripes circus-pygargus-female))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
-    (assert (species-stripes circus-pygargus-female))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
-    (assert (species-stripes circus-pygargus-female))
-    (assert (type-stripes tailfeathers))
 
     (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
     (assert (species-stripes circus-pygargus-female))
@@ -874,10 +718,6 @@
 
     (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
     (assert (species-stripes accipiter-gentilis-adult))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
-    (assert (species-stripes accipiter-gentilis-adult))
     (assert (type-stripes secondaries))
 
     (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
@@ -890,75 +730,15 @@
 
     (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
     (assert (species-stripes accipiter-nisus-male))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
-    (assert (species-stripes accipiter-nisus-male))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
-    (assert (species-stripes accipiter-nisus-male))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
-    (assert (species-stripes accipiter-nisus-male))
     (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
-    (assert (species-stripes accipiter-nisus-female))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
-    (assert (species-stripes accipiter-nisus-female))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
-    (assert (species-stripes accipiter-nisus-female))
-    (assert (type-stripes tailfeathers))
 
     (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
     (assert (species-stripes accipiter-nisus-female))
     (assert (type-stripes tertiaries))
 
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes tertiaries))
-
     (printout t "Vanes stripes may indicate asio-otus" crlf)
     (assert (species-stripes asio-otus))
     (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate asio-otus" crlf)
-    (assert (species-stripes asio-otus))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate asio-otus" crlf)
-    (assert (species-stripes asio-otus))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate asio-otus" crlf)
-    (assert (species-stripes asio-otus))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate strix-aluco" crlf)
-    (assert (species-stripes strix-aluco))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate strix-aluco" crlf)
-    (assert (species-stripes strix-aluco))
-    (assert (type-stripes secondaries))
 
     (printout t "Vanes stripes may indicate strix-aluco" crlf)
     (assert (species-stripes strix-aluco))
@@ -972,211 +752,11 @@
 (defrule rule-stripes
     (stripes wide)
 =>
-    (printout t "Vanes stripes may indicate aquila-chrysaetos-adult" crlf)
-    (assert (species-stripes aquila-chrysaetos-adult))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate aquila-chrysaetos-adult" crlf)
-    (assert (species-stripes aquila-chrysaetos-adult))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate aquila-chrysaetos-adult" crlf)
-    (assert (species-stripes aquila-chrysaetos-adult))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate aquila-chrysaetos-adult" crlf)
-    (assert (species-stripes aquila-chrysaetos-adult))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate circaetus-gallicus-young" crlf)
-    (assert (species-stripes circaetus-gallicus-young))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate circaetus-gallicus-young" crlf)
-    (assert (species-stripes circaetus-gallicus-young))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate circaetus-gallicus-young" crlf)
-    (assert (species-stripes circaetus-gallicus-young))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate circaetus-gallicus-young" crlf)
-    (assert (species-stripes circaetus-gallicus-young))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
-    (assert (species-stripes buteo-buteo-young))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
-    (assert (species-stripes buteo-buteo-young))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
-    (assert (species-stripes buteo-buteo-young))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-young" crlf)
-    (assert (species-stripes buteo-buteo-young))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
-    (assert (species-stripes buteo-buteo-adult))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
-    (assert (species-stripes buteo-buteo-adult))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
-    (assert (species-stripes buteo-buteo-adult))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate buteo-buteo-adult" crlf)
-    (assert (species-stripes buteo-buteo-adult))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
-    (assert (species-stripes circus-pygargus-male))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
-    (assert (species-stripes circus-pygargus-male))
-    (assert (type-stripes secondaries))
-
     (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
     (assert (species-stripes circus-pygargus-male))
     (assert (type-stripes tailfeathers))
 
-    (printout t "Vanes stripes may indicate circus-pygargus-male" crlf)
-    (assert (species-stripes circus-pygargus-male))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
-    (assert (species-stripes circus-pygargus-female))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
-    (assert (species-stripes circus-pygargus-female))
-    (assert (type-stripes secondaries))
-
     (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
     (assert (species-stripes circus-pygargus-female))
     (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate circus-pygargus-female" crlf)
-    (assert (species-stripes circus-pygargus-female))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-young" crlf)
-    (assert (species-stripes accipiter-gentilis-young))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-young" crlf)
-    (assert (species-stripes accipiter-gentilis-young))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-young" crlf)
-    (assert (species-stripes accipiter-gentilis-young))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-young" crlf)
-    (assert (species-stripes accipiter-gentilis-young))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
-    (assert (species-stripes accipiter-gentilis-adult))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
-    (assert (species-stripes accipiter-gentilis-adult))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
-    (assert (species-stripes accipiter-gentilis-adult))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate accipiter-gentilis-adult" crlf)
-    (assert (species-stripes accipiter-gentilis-adult))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
-    (assert (species-stripes accipiter-nisus-male))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
-    (assert (species-stripes accipiter-nisus-male))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
-    (assert (species-stripes accipiter-nisus-male))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-male" crlf)
-    (assert (species-stripes accipiter-nisus-male))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
-    (assert (species-stripes accipiter-nisus-female))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
-    (assert (species-stripes accipiter-nisus-female))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
-    (assert (species-stripes accipiter-nisus-female))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate accipiter-nisus-female" crlf)
-    (assert (species-stripes accipiter-nisus-female))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate tyto-alba" crlf)
-    (assert (species-stripes tyto-alba))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate asio-otus" crlf)
-    (assert (species-stripes asio-otus))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate asio-otus" crlf)
-    (assert (species-stripes asio-otus))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate asio-otus" crlf)
-    (assert (species-stripes asio-otus))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate asio-otus" crlf)
-    (assert (species-stripes asio-otus))
-    (assert (type-stripes tertiaries))
-
-    (printout t "Vanes stripes may indicate strix-aluco" crlf)
-    (assert (species-stripes strix-aluco))
-    (assert (type-stripes primaries))
-
-    (printout t "Vanes stripes may indicate strix-aluco" crlf)
-    (assert (species-stripes strix-aluco))
-    (assert (type-stripes secondaries))
-
-    (printout t "Vanes stripes may indicate strix-aluco" crlf)
-    (assert (species-stripes strix-aluco))
-    (assert (type-stripes tailfeathers))
-
-    (printout t "Vanes stripes may indicate strix-aluco" crlf)
-    (assert (species-stripes strix-aluco))
-    (assert (type-stripes tertiaries))
 )
