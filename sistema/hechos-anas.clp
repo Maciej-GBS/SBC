@@ -3,7 +3,7 @@
 	(T 4) CF 0.8
 	(D high)
 	(S medium)
-	(length )
+	(length 85)
     (calamus (color white))
     (vane-inner (color grey))
     (vane-inner (color brown))
