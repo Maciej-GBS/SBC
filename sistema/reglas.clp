@@ -545,7 +545,7 @@
     (assert (species-rachis-striped accipiter-nisus-female))
 )
 
-(defrule rule-stripes
+(defrule rule-stripes-visible
     (stripes visible)
 =>
     (assert (type-stripes primaries))
@@ -590,7 +590,7 @@
     (assert (species-stripes strix-aluco))
 )
 
-(defrule rule-stripes
+(defrule rule-stripes-weak
     (stripes weak)
 =>
     (assert (type-stripes primaries))
@@ -629,7 +629,7 @@
     (assert (species-stripes strix-aluco))
 )
 
-(defrule rule-stripes
+(defrule rule-stripes-wide
     (stripes wide)
 =>
     (assert (type-stripes tailfeathers))
@@ -641,7 +641,7 @@
     (assert (species-stripes circus-pygargus-female))
 )
 
-(defrule rule-anser-anser
+(defrule rule-anser-anser-primaries
     (type-length primaries)
     (species-length anser-anser)
     (M very-high)
@@ -665,7 +665,7 @@
     (printout t "Species recognized anser-anser by feather of type primaries" crlf)
 )
 
-(defrule rule-anser-anser
+(defrule rule-anser-anser-secondaries
     (type-length secondaries)
     (species-length anser-anser)
     (M high)
@@ -689,7 +689,7 @@
     (printout t "Species recognized anser-anser by feather of type secondaries" crlf)
 )
 
-(defrule rule-anser-anser
+(defrule rule-anser-anser-tailfeathers
     (type-length tailfeathers)
     (species-length anser-anser)
     (M high)
@@ -711,7 +711,7 @@
     (printout t "Species recognized anser-anser by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-anser-anser
+(defrule rule-anser-anser-tertiaries
     (type-length tertiaries)
     (species-length anser-anser)
     (M high)
@@ -737,7 +737,7 @@
     (printout t "Species recognized anser-anser by feather of type tertiaries" crlf)
 )
 
-(defrule rule-tadorna-tadorna-adult
+(defrule rule-tadorna-tadorna-adult-primaries
     (type-length primaries)
     (species-length tadorna-tadorna-adult)
     (M very-high)
@@ -758,7 +758,7 @@
     (printout t "Species recognized tadorna-tadorna-adult by feather of type primaries" crlf)
 )
 
-(defrule rule-tadorna-tadorna-adult
+(defrule rule-tadorna-tadorna-adult-secondaries
     (type-length secondaries)
     (species-length tadorna-tadorna-adult)
     (species-glossy tadorna-tadorna-adult)
@@ -783,7 +783,7 @@
     (printout t "Species recognized tadorna-tadorna-adult by feather of type secondaries" crlf)
 )
 
-(defrule rule-tadorna-tadorna-adult
+(defrule rule-tadorna-tadorna-adult-tailfeathers
     (type-length tailfeathers)
     (species-length tadorna-tadorna-adult)
     (M high)
@@ -804,7 +804,7 @@
     (printout t "Species recognized tadorna-tadorna-adult by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-tadorna-tadorna-adult
+(defrule rule-tadorna-tadorna-adult-tertiaries
     (type-length tertiaries)
     (species-length tadorna-tadorna-adult)
     (M high)
@@ -826,7 +826,7 @@
     (printout t "Species recognized tadorna-tadorna-adult by feather of type tertiaries" crlf)
 )
 
-(defrule rule-tadorna-tadorna-young
+(defrule rule-tadorna-tadorna-young-primaries
     (type-length primaries)
     (species-length tadorna-tadorna-young)
     (M very-high)
@@ -854,7 +854,7 @@
     (printout t "Species recognized tadorna-tadorna-young by feather of type primaries" crlf)
 )
 
-(defrule rule-tadorna-tadorna-young
+(defrule rule-tadorna-tadorna-young-secondaries
     (type-length secondaries)
     (species-length tadorna-tadorna-young)
     (M high)
@@ -882,7 +882,7 @@
     (printout t "Species recognized tadorna-tadorna-young by feather of type secondaries" crlf)
 )
 
-(defrule rule-tadorna-tadorna-young
+(defrule rule-tadorna-tadorna-young-tailfeathers
     (type-length tailfeathers)
     (species-length tadorna-tadorna-young)
     (M high)
@@ -903,7 +903,7 @@
     (printout t "Species recognized tadorna-tadorna-young by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-tadorna-tadorna-young
+(defrule rule-tadorna-tadorna-young-tertiaries
     (type-length tertiaries)
     (species-length tadorna-tadorna-young)
     (M high)
@@ -931,7 +931,7 @@
     (printout t "Species recognized tadorna-tadorna-young by feather of type tertiaries" crlf)
 )
 
-(defrule rule-anas-platyrhynchos
+(defrule rule-anas-platyrhynchos-primaries
     (type-length primaries)
     (species-length anas-platyrhynchos)
     (M very-high)
@@ -955,7 +955,7 @@
     (printout t "Species recognized anas-platyrhynchos by feather of type primaries" crlf)
 )
 
-(defrule rule-anas-platyrhynchos
+(defrule rule-anas-platyrhynchos-secondaries
     (type-length secondaries)
     (species-length anas-platyrhynchos)
     (species-glossy anas-platyrhynchos)
@@ -980,7 +980,7 @@
     (printout t "Species recognized anas-platyrhynchos by feather of type secondaries" crlf)
 )
 
-(defrule rule-anas-platyrhynchos
+(defrule rule-anas-platyrhynchos-tailfeathers
     (type-length tailfeathers)
     (species-length anas-platyrhynchos)
     (M high)
@@ -1005,7 +1005,7 @@
     (printout t "Species recognized anas-platyrhynchos by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-anas-platyrhynchos
+(defrule rule-anas-platyrhynchos-tertiaries
     (type-length tertiaries)
     (species-length anas-platyrhynchos)
     (M high)
@@ -1026,7 +1026,7 @@
     (printout t "Species recognized anas-platyrhynchos by feather of type tertiaries" crlf)
 )
 
-(defrule rule-anas-crecca
+(defrule rule-anas-crecca-primaries
     (type-length primaries)
     (species-length anas-crecca)
     (M high)
@@ -1046,7 +1046,7 @@
     (printout t "Species recognized anas-crecca by feather of type primaries" crlf)
 )
 
-(defrule rule-anas-crecca
+(defrule rule-anas-crecca-secondaries
     (type-length secondaries)
     (species-length anas-crecca)
     (species-glossy anas-crecca)
@@ -1067,7 +1067,7 @@
     (printout t "Species recognized anas-crecca by feather of type secondaries" crlf)
 )
 
-(defrule rule-anas-crecca
+(defrule rule-anas-crecca-tailfeathers
     (type-length tailfeathers)
     (species-length anas-crecca)
     (M high)
@@ -1088,7 +1088,7 @@
     (printout t "Species recognized anas-crecca by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-anas-crecca
+(defrule rule-anas-crecca-tertiaries
     (type-length tertiaries)
     (species-length anas-crecca)
     (M medium)
@@ -1110,7 +1110,7 @@
     (printout t "Species recognized anas-crecca by feather of type tertiaries" crlf)
 )
 
-(defrule rule-podiceps-cristatus
+(defrule rule-podiceps-cristatus-primaries
     (type-length primaries)
     (species-length podiceps-cristatus)
     (M high)
@@ -1135,7 +1135,7 @@
     (printout t "Species recognized podiceps-cristatus by feather of type primaries" crlf)
 )
 
-(defrule rule-podiceps-cristatus
+(defrule rule-podiceps-cristatus-secondaries
     (type-length secondaries)
     (species-length podiceps-cristatus)
     (M high)
@@ -1161,7 +1161,7 @@
     (printout t "Species recognized podiceps-cristatus by feather of type secondaries" crlf)
 )
 
-(defrule rule-podiceps-cristatus
+(defrule rule-podiceps-cristatus-tertiaries
     (type-length tertiaries)
     (species-length podiceps-cristatus)
     (M medium)
@@ -1184,7 +1184,7 @@
     (printout t "Species recognized podiceps-cristatus by feather of type tertiaries" crlf)
 )
 
-(defrule rule-phalacrocorax-carbo
+(defrule rule-phalacrocorax-carbo-primaries
     (type-length primaries)
     (species-length phalacrocorax-carbo)
     (M high)
@@ -1207,7 +1207,7 @@
     (printout t "Species recognized phalacrocorax-carbo by feather of type primaries" crlf)
 )
 
-(defrule rule-phalacrocorax-carbo
+(defrule rule-phalacrocorax-carbo-secondaries
     (type-length secondaries)
     (species-length phalacrocorax-carbo)
     (M high)
@@ -1230,7 +1230,7 @@
     (printout t "Species recognized phalacrocorax-carbo by feather of type secondaries" crlf)
 )
 
-(defrule rule-phalacrocorax-carbo
+(defrule rule-phalacrocorax-carbo-tailfeathers
     (type-length tailfeathers)
     (species-length phalacrocorax-carbo)
     (M very-high)
@@ -1249,7 +1249,7 @@
     (printout t "Species recognized phalacrocorax-carbo by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-phalacrocorax-carbo
+(defrule rule-phalacrocorax-carbo-tertiaries
     (type-length tertiaries)
     (species-length phalacrocorax-carbo)
     (M medium)
@@ -1272,7 +1272,7 @@
     (printout t "Species recognized phalacrocorax-carbo by feather of type tertiaries" crlf)
 )
 
-(defrule rule-plegadis-falcinellus
+(defrule rule-plegadis-falcinellus-primaries
     (type-length primaries)
     (species-length plegadis-falcinellus)
     (species-glossy plegadis-falcinellus)
@@ -1297,7 +1297,7 @@
     (printout t "Species recognized plegadis-falcinellus by feather of type primaries" crlf)
 )
 
-(defrule rule-plegadis-falcinellus
+(defrule rule-plegadis-falcinellus-secondaries
     (type-length secondaries)
     (species-length plegadis-falcinellus)
     (species-glossy plegadis-falcinellus)
@@ -1323,7 +1323,7 @@
     (printout t "Species recognized plegadis-falcinellus by feather of type secondaries" crlf)
 )
 
-(defrule rule-plegadis-falcinellus
+(defrule rule-plegadis-falcinellus-tailfeathers
     (type-length tailfeathers)
     (species-length plegadis-falcinellus)
     (M high)
@@ -1343,7 +1343,7 @@
     (printout t "Species recognized plegadis-falcinellus by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-plegadis-falcinellus
+(defrule rule-plegadis-falcinellus-tertiaries
     (type-length tertiaries)
     (species-length plegadis-falcinellus)
     (species-glossy plegadis-falcinellus)
@@ -1369,7 +1369,7 @@
     (printout t "Species recognized plegadis-falcinellus by feather of type tertiaries" crlf)
 )
 
-(defrule rule-phoenicopterus-roseus
+(defrule rule-phoenicopterus-roseus-primaries
     (type-length primaries)
     (species-length phoenicopterus-roseus)
     (M very-high)
@@ -1389,7 +1389,7 @@
     (printout t "Species recognized phoenicopterus-roseus by feather of type primaries" crlf)
 )
 
-(defrule rule-phoenicopterus-roseus
+(defrule rule-phoenicopterus-roseus-secondaries
     (type-length secondaries)
     (species-length phoenicopterus-roseus)
     (M high)
@@ -1409,7 +1409,7 @@
     (printout t "Species recognized phoenicopterus-roseus by feather of type secondaries" crlf)
 )
 
-(defrule rule-phoenicopterus-roseus
+(defrule rule-phoenicopterus-roseus-tailfeathers
     (type-length tailfeathers)
     (species-length phoenicopterus-roseus)
     (M medium)
@@ -1429,7 +1429,7 @@
     (printout t "Species recognized phoenicopterus-roseus by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-phoenicopterus-roseus
+(defrule rule-phoenicopterus-roseus-tertiaries
     (type-length tertiaries)
     (species-length phoenicopterus-roseus)
     (M high)
@@ -1449,7 +1449,7 @@
     (printout t "Species recognized phoenicopterus-roseus by feather of type tertiaries" crlf)
 )
 
-(defrule rule-ciconia-ciconia
+(defrule rule-ciconia-ciconia-primaries
     (type-length primaries)
     (species-length ciconia-ciconia)
     (M very-high)
@@ -1472,7 +1472,7 @@
     (printout t "Species recognized ciconia-ciconia by feather of type primaries" crlf)
 )
 
-(defrule rule-ciconia-ciconia
+(defrule rule-ciconia-ciconia-secondaries
     (type-length secondaries)
     (species-length ciconia-ciconia)
     (M high)
@@ -1495,7 +1495,7 @@
     (printout t "Species recognized ciconia-ciconia by feather of type secondaries" crlf)
 )
 
-(defrule rule-ciconia-ciconia
+(defrule rule-ciconia-ciconia-tailfeathers
     (type-length tailfeathers)
     (species-length ciconia-ciconia)
     (M medium)
@@ -1514,7 +1514,7 @@
     (printout t "Species recognized ciconia-ciconia by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-ciconia-ciconia
+(defrule rule-ciconia-ciconia-tertiaries
     (type-length tertiaries)
     (species-length ciconia-ciconia)
     (M high)
@@ -1537,7 +1537,7 @@
     (printout t "Species recognized ciconia-ciconia by feather of type tertiaries" crlf)
 )
 
-(defrule rule-grus-grus
+(defrule rule-grus-grus-primaries
     (type-length primaries)
     (species-length grus-grus)
     (M very-high)
@@ -1562,7 +1562,7 @@
     (printout t "Species recognized grus-grus by feather of type primaries" crlf)
 )
 
-(defrule rule-grus-grus
+(defrule rule-grus-grus-secondaries
     (type-length secondaries)
     (species-length grus-grus)
     (M high)
@@ -1589,7 +1589,7 @@
     (printout t "Species recognized grus-grus by feather of type secondaries" crlf)
 )
 
-(defrule rule-grus-grus
+(defrule rule-grus-grus-tailfeathers
     (type-length tailfeathers)
     (species-length grus-grus)
     (M medium)
@@ -1613,7 +1613,7 @@
     (printout t "Species recognized grus-grus by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-grus-grus
+(defrule rule-grus-grus-tertiaries
     (type-length tertiaries)
     (species-length grus-grus)
     (M low)
@@ -1645,7 +1645,7 @@
     (printout t "Species recognized grus-grus by feather of type tertiaries" crlf)
 )
 
-(defrule rule-ardea-cinerea
+(defrule rule-ardea-cinerea-primaries
     (type-length primaries)
     (species-length ardea-cinerea)
     (M high)
@@ -1669,7 +1669,7 @@
     (printout t "Species recognized ardea-cinerea by feather of type primaries" crlf)
 )
 
-(defrule rule-ardea-cinerea
+(defrule rule-ardea-cinerea-secondaries
     (type-length secondaries)
     (species-length ardea-cinerea)
     (M medium)
@@ -1693,7 +1693,7 @@
     (printout t "Species recognized ardea-cinerea by feather of type secondaries" crlf)
 )
 
-(defrule rule-ardea-cinerea
+(defrule rule-ardea-cinerea-tailfeathers
     (type-length tailfeathers)
     (species-length ardea-cinerea)
     (M low)
@@ -1714,7 +1714,7 @@
     (printout t "Species recognized ardea-cinerea by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-ardea-cinerea
+(defrule rule-ardea-cinerea-tertiaries
     (type-length tertiaries)
     (species-length ardea-cinerea)
     (M low)
@@ -1738,7 +1738,7 @@
     (printout t "Species recognized ardea-cinerea by feather of type tertiaries" crlf)
 )
 
-(defrule rule-nycticorax-nycticorax-young
+(defrule rule-nycticorax-nycticorax-young-primaries
     (type-length primaries)
     (species-length nycticorax-nycticorax-young)
     (M high)
@@ -1760,7 +1760,7 @@
     (printout t "Species recognized nycticorax-nycticorax-young by feather of type primaries" crlf)
 )
 
-(defrule rule-nycticorax-nycticorax-young
+(defrule rule-nycticorax-nycticorax-young-secondaries
     (type-length secondaries)
     (species-length nycticorax-nycticorax-young)
     (M medium)
@@ -1782,7 +1782,7 @@
     (printout t "Species recognized nycticorax-nycticorax-young by feather of type secondaries" crlf)
 )
 
-(defrule rule-nycticorax-nycticorax-young
+(defrule rule-nycticorax-nycticorax-young-tailfeathers
     (type-length tailfeathers)
     (species-length nycticorax-nycticorax-young)
     (M low)
@@ -1806,7 +1806,7 @@
     (printout t "Species recognized nycticorax-nycticorax-young by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-nycticorax-nycticorax-young
+(defrule rule-nycticorax-nycticorax-young-tertiaries
     (type-length tertiaries)
     (species-length nycticorax-nycticorax-young)
     (M low)
@@ -1828,7 +1828,7 @@
     (printout t "Species recognized nycticorax-nycticorax-young by feather of type tertiaries" crlf)
 )
 
-(defrule rule-nycticorax-nycticorax-adult
+(defrule rule-nycticorax-nycticorax-adult-primaries
     (type-length primaries)
     (species-length nycticorax-nycticorax-adult)
     (M high)
@@ -1847,7 +1847,7 @@
     (printout t "Species recognized nycticorax-nycticorax-adult by feather of type primaries" crlf)
 )
 
-(defrule rule-nycticorax-nycticorax-adult
+(defrule rule-nycticorax-nycticorax-adult-secondaries
     (type-length secondaries)
     (species-length nycticorax-nycticorax-adult)
     (M medium)
@@ -1866,7 +1866,7 @@
     (printout t "Species recognized nycticorax-nycticorax-adult by feather of type secondaries" crlf)
 )
 
-(defrule rule-nycticorax-nycticorax-adult
+(defrule rule-nycticorax-nycticorax-adult-tailfeathers
     (type-length tailfeathers)
     (species-length nycticorax-nycticorax-adult)
     (M low)
@@ -1887,7 +1887,7 @@
     (printout t "Species recognized nycticorax-nycticorax-adult by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-nycticorax-nycticorax-adult
+(defrule rule-nycticorax-nycticorax-adult-tertiaries
     (type-length tertiaries)
     (species-length nycticorax-nycticorax-adult)
     (M low)
@@ -1906,7 +1906,7 @@
     (printout t "Species recognized nycticorax-nycticorax-adult by feather of type tertiaries" crlf)
 )
 
-(defrule rule-egretta-garzetta
+(defrule rule-egretta-garzetta-primaries
     (type-length primaries)
     (species-length egretta-garzetta)
     (M high)
@@ -1925,7 +1925,7 @@
     (printout t "Species recognized egretta-garzetta by feather of type primaries" crlf)
 )
 
-(defrule rule-egretta-garzetta
+(defrule rule-egretta-garzetta-secondaries
     (type-length secondaries)
     (species-length egretta-garzetta)
     (M medium)
@@ -1944,7 +1944,7 @@
     (printout t "Species recognized egretta-garzetta by feather of type secondaries" crlf)
 )
 
-(defrule rule-egretta-garzetta
+(defrule rule-egretta-garzetta-tailfeathers
     (type-length tailfeathers)
     (species-length egretta-garzetta)
     (M low)
@@ -1963,7 +1963,7 @@
     (printout t "Species recognized egretta-garzetta by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-egretta-garzetta
+(defrule rule-egretta-garzetta-tertiaries
     (type-length tertiaries)
     (species-length egretta-garzetta)
     (M low)
@@ -1982,7 +1982,7 @@
     (printout t "Species recognized egretta-garzetta by feather of type tertiaries" crlf)
 )
 
-(defrule rule-columba-livia-f.-urbana
+(defrule rule-columba-livia-f.-urbana-primaries
     (type-length primaries)
     (species-length columba-livia-f.-urbana)
     (M very-high)
@@ -2005,7 +2005,7 @@
     (printout t "Species recognized columba-livia-f.-urbana by feather of type primaries" crlf)
 )
 
-(defrule rule-columba-livia-f.-urbana
+(defrule rule-columba-livia-f.-urbana-secondaries
     (type-length secondaries)
     (species-length columba-livia-f.-urbana)
     (M high)
@@ -2029,7 +2029,7 @@
     (printout t "Species recognized columba-livia-f.-urbana by feather of type secondaries" crlf)
 )
 
-(defrule rule-columba-livia-f.-urbana
+(defrule rule-columba-livia-f.-urbana-tailfeathers
     (type-length tailfeathers)
     (species-length columba-livia-f.-urbana)
     (M very-high)
@@ -2052,7 +2052,7 @@
     (printout t "Species recognized columba-livia-f.-urbana by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-columba-livia-f.-urbana
+(defrule rule-columba-livia-f.-urbana-tertiaries
     (type-length tertiaries)
     (species-length columba-livia-f.-urbana)
     (M high)
@@ -2075,7 +2075,7 @@
     (printout t "Species recognized columba-livia-f.-urbana by feather of type tertiaries" crlf)
 )
 
-(defrule rule-columba-palumbus
+(defrule rule-columba-palumbus-primaries
     (type-length primaries)
     (species-length columba-palumbus)
     (M very-high)
@@ -2096,7 +2096,7 @@
     (printout t "Species recognized columba-palumbus by feather of type primaries" crlf)
 )
 
-(defrule rule-columba-palumbus
+(defrule rule-columba-palumbus-secondaries
     (type-length secondaries)
     (species-length columba-palumbus)
     (M high)
@@ -2119,7 +2119,7 @@
     (printout t "Species recognized columba-palumbus by feather of type secondaries" crlf)
 )
 
-(defrule rule-columba-palumbus
+(defrule rule-columba-palumbus-tailfeathers
     (type-length tailfeathers)
     (species-length columba-palumbus)
     (M very-high)
@@ -2143,7 +2143,7 @@
     (printout t "Species recognized columba-palumbus by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-columba-palumbus
+(defrule rule-columba-palumbus-tertiaries
     (type-length tertiaries)
     (species-length columba-palumbus)
     (M high)
@@ -2164,7 +2164,7 @@
     (printout t "Species recognized columba-palumbus by feather of type tertiaries" crlf)
 )
 
-(defrule rule-aquila-chrysaetos-adult
+(defrule rule-aquila-chrysaetos-adult-primaries
     (type-length primaries)
     (species-length aquila-chrysaetos-adult)
     (type-stripes primaries)
@@ -2191,7 +2191,7 @@
     (printout t "Species recognized aquila-chrysaetos-adult by feather of type primaries" crlf)
 )
 
-(defrule rule-aquila-chrysaetos-adult
+(defrule rule-aquila-chrysaetos-adult-secondaries
     (type-length secondaries)
     (species-length aquila-chrysaetos-adult)
     (type-stripes secondaries)
@@ -2218,7 +2218,7 @@
     (printout t "Species recognized aquila-chrysaetos-adult by feather of type secondaries" crlf)
 )
 
-(defrule rule-aquila-chrysaetos-adult
+(defrule rule-aquila-chrysaetos-adult-tailfeathers
     (type-length tailfeathers)
     (species-length aquila-chrysaetos-adult)
     (type-stripes tailfeathers)
@@ -2245,7 +2245,7 @@
     (printout t "Species recognized aquila-chrysaetos-adult by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-aquila-chrysaetos-adult
+(defrule rule-aquila-chrysaetos-adult-tertiaries
     (type-length tertiaries)
     (species-length aquila-chrysaetos-adult)
     (type-stripes tertiaries)
@@ -2272,7 +2272,7 @@
     (printout t "Species recognized aquila-chrysaetos-adult by feather of type tertiaries" crlf)
 )
 
-(defrule rule-aquila-chrysaetos-young
+(defrule rule-aquila-chrysaetos-young-primaries
     (type-length primaries)
     (species-length aquila-chrysaetos-young)
     (M very-high)
@@ -2296,7 +2296,7 @@
     (printout t "Species recognized aquila-chrysaetos-young by feather of type primaries" crlf)
 )
 
-(defrule rule-aquila-chrysaetos-young
+(defrule rule-aquila-chrysaetos-young-secondaries
     (type-length secondaries)
     (species-length aquila-chrysaetos-young)
     (M high)
@@ -2320,7 +2320,7 @@
     (printout t "Species recognized aquila-chrysaetos-young by feather of type secondaries" crlf)
 )
 
-(defrule rule-aquila-chrysaetos-young
+(defrule rule-aquila-chrysaetos-young-tailfeathers
     (type-length tailfeathers)
     (species-length aquila-chrysaetos-young)
     (M high)
@@ -2344,7 +2344,7 @@
     (printout t "Species recognized aquila-chrysaetos-young by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-aquila-chrysaetos-young
+(defrule rule-aquila-chrysaetos-young-tertiaries
     (type-length tertiaries)
     (species-length aquila-chrysaetos-young)
     (M medium)
@@ -2368,7 +2368,7 @@
     (printout t "Species recognized aquila-chrysaetos-young by feather of type tertiaries" crlf)
 )
 
-(defrule rule-circaetus-gallicus-young
+(defrule rule-circaetus-gallicus-young-primaries
     (type-length primaries)
     (species-length circaetus-gallicus-young)
     (type-stripes primaries)
@@ -2391,7 +2391,7 @@
     (printout t "Species recognized circaetus-gallicus-young by feather of type primaries" crlf)
 )
 
-(defrule rule-circaetus-gallicus-young
+(defrule rule-circaetus-gallicus-young-secondaries
     (type-length secondaries)
     (species-length circaetus-gallicus-young)
     (type-stripes secondaries)
@@ -2413,7 +2413,7 @@
     (printout t "Species recognized circaetus-gallicus-young by feather of type secondaries" crlf)
 )
 
-(defrule rule-circaetus-gallicus-young
+(defrule rule-circaetus-gallicus-young-tailfeathers
     (type-length tailfeathers)
     (species-length circaetus-gallicus-young)
     (type-stripes tailfeathers)
@@ -2435,7 +2435,7 @@
     (printout t "Species recognized circaetus-gallicus-young by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-circaetus-gallicus-young
+(defrule rule-circaetus-gallicus-young-tertiaries
     (type-length tertiaries)
     (species-length circaetus-gallicus-young)
     (type-stripes tertiaries)
@@ -2457,7 +2457,7 @@
     (printout t "Species recognized circaetus-gallicus-young by feather of type tertiaries" crlf)
 )
 
-(defrule rule-circaetus-gallicus-adult
+(defrule rule-circaetus-gallicus-adult-primaries
     (type-length primaries)
     (species-length circaetus-gallicus-adult)
     (M very-high)
@@ -2478,7 +2478,7 @@
     (printout t "Species recognized circaetus-gallicus-adult by feather of type primaries" crlf)
 )
 
-(defrule rule-circaetus-gallicus-adult
+(defrule rule-circaetus-gallicus-adult-secondaries
     (type-length secondaries)
     (species-length circaetus-gallicus-adult)
     (M high)
@@ -2498,7 +2498,7 @@
     (printout t "Species recognized circaetus-gallicus-adult by feather of type secondaries" crlf)
 )
 
-(defrule rule-circaetus-gallicus-adult
+(defrule rule-circaetus-gallicus-adult-tailfeathers
     (type-length tailfeathers)
     (species-length circaetus-gallicus-adult)
     (M medium)
@@ -2518,7 +2518,7 @@
     (printout t "Species recognized circaetus-gallicus-adult by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-circaetus-gallicus-adult
+(defrule rule-circaetus-gallicus-adult-tertiaries
     (type-length tertiaries)
     (species-length circaetus-gallicus-adult)
     (M medium)
@@ -2538,7 +2538,7 @@
     (printout t "Species recognized circaetus-gallicus-adult by feather of type tertiaries" crlf)
 )
 
-(defrule rule-buteo-buteo-young
+(defrule rule-buteo-buteo-young-primaries
     (type-length primaries)
     (species-length buteo-buteo-young)
     (type-stripes primaries)
@@ -2566,7 +2566,7 @@
     (printout t "Species recognized buteo-buteo-young by feather of type primaries" crlf)
 )
 
-(defrule rule-buteo-buteo-young
+(defrule rule-buteo-buteo-young-secondaries
     (type-length secondaries)
     (species-length buteo-buteo-young)
     (type-stripes secondaries)
@@ -2594,7 +2594,7 @@
     (printout t "Species recognized buteo-buteo-young by feather of type secondaries" crlf)
 )
 
-(defrule rule-buteo-buteo-young
+(defrule rule-buteo-buteo-young-tailfeathers
     (type-length tailfeathers)
     (species-length buteo-buteo-young)
     (type-stripes tailfeathers)
@@ -2624,7 +2624,7 @@
     (printout t "Species recognized buteo-buteo-young by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-buteo-buteo-young
+(defrule rule-buteo-buteo-young-tertiaries
     (type-length tertiaries)
     (species-length buteo-buteo-young)
     (type-stripes tertiaries)
@@ -2647,7 +2647,7 @@
     (printout t "Species recognized buteo-buteo-young by feather of type tertiaries" crlf)
 )
 
-(defrule rule-buteo-buteo-adult
+(defrule rule-buteo-buteo-adult-primaries
     (type-length primaries)
     (species-length buteo-buteo-adult)
     (type-stripes primaries)
@@ -2671,7 +2671,7 @@
     (printout t "Species recognized buteo-buteo-adult by feather of type primaries" crlf)
 )
 
-(defrule rule-buteo-buteo-adult
+(defrule rule-buteo-buteo-adult-secondaries
     (type-length secondaries)
     (species-length buteo-buteo-adult)
     (type-stripes secondaries)
@@ -2695,7 +2695,7 @@
     (printout t "Species recognized buteo-buteo-adult by feather of type secondaries" crlf)
 )
 
-(defrule rule-buteo-buteo-adult
+(defrule rule-buteo-buteo-adult-tailfeathers
     (type-length tailfeathers)
     (species-length buteo-buteo-adult)
     (type-stripes tailfeathers)
@@ -2719,7 +2719,7 @@
     (printout t "Species recognized buteo-buteo-adult by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-buteo-buteo-adult
+(defrule rule-buteo-buteo-adult-tertiaries
     (type-length tertiaries)
     (species-length buteo-buteo-adult)
     (type-stripes tertiaries)
@@ -2742,7 +2742,7 @@
     (printout t "Species recognized buteo-buteo-adult by feather of type tertiaries" crlf)
 )
 
-(defrule rule-circus-pygargus-male
+(defrule rule-circus-pygargus-male-primaries
     (type-length primaries)
     (species-length circus-pygargus-male)
     (type-stripes primaries)
@@ -2769,7 +2769,7 @@
     (printout t "Species recognized circus-pygargus-male by feather of type primaries" crlf)
 )
 
-(defrule rule-circus-pygargus-male
+(defrule rule-circus-pygargus-male-secondaries
     (type-length secondaries)
     (species-length circus-pygargus-male)
     (type-stripes secondaries)
@@ -2794,7 +2794,7 @@
     (printout t "Species recognized circus-pygargus-male by feather of type secondaries" crlf)
 )
 
-(defrule rule-circus-pygargus-male
+(defrule rule-circus-pygargus-male-tailfeathers
     (type-length tailfeathers)
     (species-length circus-pygargus-male)
     (type-stripes tailfeathers)
@@ -2822,7 +2822,7 @@
     (printout t "Species recognized circus-pygargus-male by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-circus-pygargus-male
+(defrule rule-circus-pygargus-male-tertiaries
     (type-length tertiaries)
     (species-length circus-pygargus-male)
     (type-stripes tertiaries)
@@ -2848,7 +2848,7 @@
     (printout t "Species recognized circus-pygargus-male by feather of type tertiaries" crlf)
 )
 
-(defrule rule-circus-pygargus-female
+(defrule rule-circus-pygargus-female-primaries
     (type-length primaries)
     (species-length circus-pygargus-female)
     (type-stripes primaries)
@@ -2872,7 +2872,7 @@
     (printout t "Species recognized circus-pygargus-female by feather of type primaries" crlf)
 )
 
-(defrule rule-circus-pygargus-female
+(defrule rule-circus-pygargus-female-secondaries
     (type-length secondaries)
     (species-length circus-pygargus-female)
     (type-stripes secondaries)
@@ -2896,7 +2896,7 @@
     (printout t "Species recognized circus-pygargus-female by feather of type secondaries" crlf)
 )
 
-(defrule rule-circus-pygargus-female
+(defrule rule-circus-pygargus-female-tailfeathers
     (type-length tailfeathers)
     (species-length circus-pygargus-female)
     (type-stripes tailfeathers)
@@ -2922,7 +2922,7 @@
     (printout t "Species recognized circus-pygargus-female by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-circus-pygargus-female
+(defrule rule-circus-pygargus-female-tertiaries
     (type-length tertiaries)
     (species-length circus-pygargus-female)
     (type-stripes tertiaries)
@@ -2944,7 +2944,7 @@
     (printout t "Species recognized circus-pygargus-female by feather of type tertiaries" crlf)
 )
 
-(defrule rule-accipiter-gentilis-young
+(defrule rule-accipiter-gentilis-young-primaries
     (type-length primaries)
     (species-length accipiter-gentilis-young)
     (species-rachis-striped accipiter-gentilis-young)
@@ -2973,7 +2973,7 @@
     (printout t "Species recognized accipiter-gentilis-young by feather of type primaries" crlf)
 )
 
-(defrule rule-accipiter-gentilis-young
+(defrule rule-accipiter-gentilis-young-secondaries
     (type-length secondaries)
     (species-length accipiter-gentilis-young)
     (species-rachis-striped accipiter-gentilis-young)
@@ -3002,7 +3002,7 @@
     (printout t "Species recognized accipiter-gentilis-young by feather of type secondaries" crlf)
 )
 
-(defrule rule-accipiter-gentilis-young
+(defrule rule-accipiter-gentilis-young-tailfeathers
     (type-length tailfeathers)
     (species-length accipiter-gentilis-young)
     (species-rachis-striped accipiter-gentilis-young)
@@ -3031,7 +3031,7 @@
     (printout t "Species recognized accipiter-gentilis-young by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-accipiter-gentilis-young
+(defrule rule-accipiter-gentilis-young-tertiaries
     (type-length tertiaries)
     (species-length accipiter-gentilis-young)
     (species-rachis-striped accipiter-gentilis-young)
@@ -3061,7 +3061,7 @@
     (printout t "Species recognized accipiter-gentilis-young by feather of type tertiaries" crlf)
 )
 
-(defrule rule-accipiter-gentilis-adult
+(defrule rule-accipiter-gentilis-adult-primaries
     (type-length primaries)
     (species-length accipiter-gentilis-adult)
     (species-rachis-striped accipiter-gentilis-adult)
@@ -3086,7 +3086,7 @@
     (printout t "Species recognized accipiter-gentilis-adult by feather of type primaries" crlf)
 )
 
-(defrule rule-accipiter-gentilis-adult
+(defrule rule-accipiter-gentilis-adult-secondaries
     (type-length secondaries)
     (species-length accipiter-gentilis-adult)
     (species-rachis-striped accipiter-gentilis-adult)
@@ -3111,7 +3111,7 @@
     (printout t "Species recognized accipiter-gentilis-adult by feather of type secondaries" crlf)
 )
 
-(defrule rule-accipiter-gentilis-adult
+(defrule rule-accipiter-gentilis-adult-tailfeathers
     (type-length tailfeathers)
     (species-length accipiter-gentilis-adult)
     (species-rachis-striped accipiter-gentilis-adult)
@@ -3136,7 +3136,7 @@
     (printout t "Species recognized accipiter-gentilis-adult by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-accipiter-gentilis-adult
+(defrule rule-accipiter-gentilis-adult-tertiaries
     (type-length tertiaries)
     (species-length accipiter-gentilis-adult)
     (species-rachis-striped accipiter-gentilis-adult)
@@ -3160,7 +3160,7 @@
     (printout t "Species recognized accipiter-gentilis-adult by feather of type tertiaries" crlf)
 )
 
-(defrule rule-accipiter-nisus-male
+(defrule rule-accipiter-nisus-male-primaries
     (type-length primaries)
     (species-length accipiter-nisus-male)
     (species-rachis-striped accipiter-nisus-male)
@@ -3186,7 +3186,7 @@
     (printout t "Species recognized accipiter-nisus-male by feather of type primaries" crlf)
 )
 
-(defrule rule-accipiter-nisus-male
+(defrule rule-accipiter-nisus-male-secondaries
     (type-length secondaries)
     (species-length accipiter-nisus-male)
     (species-rachis-striped accipiter-nisus-male)
@@ -3212,7 +3212,7 @@
     (printout t "Species recognized accipiter-nisus-male by feather of type secondaries" crlf)
 )
 
-(defrule rule-accipiter-nisus-male
+(defrule rule-accipiter-nisus-male-tailfeathers
     (type-length tailfeathers)
     (species-length accipiter-nisus-male)
     (species-rachis-striped accipiter-nisus-male)
@@ -3238,7 +3238,7 @@
     (printout t "Species recognized accipiter-nisus-male by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-accipiter-nisus-male
+(defrule rule-accipiter-nisus-male-tertiaries
     (type-length tertiaries)
     (species-length accipiter-nisus-male)
     (species-rachis-striped accipiter-nisus-male)
@@ -3264,7 +3264,7 @@
     (printout t "Species recognized accipiter-nisus-male by feather of type tertiaries" crlf)
 )
 
-(defrule rule-accipiter-nisus-female
+(defrule rule-accipiter-nisus-female-primaries
     (type-length primaries)
     (species-length accipiter-nisus-female)
     (species-rachis-striped accipiter-nisus-female)
@@ -3293,7 +3293,7 @@
     (printout t "Species recognized accipiter-nisus-female by feather of type primaries" crlf)
 )
 
-(defrule rule-accipiter-nisus-female
+(defrule rule-accipiter-nisus-female-secondaries
     (type-length secondaries)
     (species-length accipiter-nisus-female)
     (species-rachis-striped accipiter-nisus-female)
@@ -3322,7 +3322,7 @@
     (printout t "Species recognized accipiter-nisus-female by feather of type secondaries" crlf)
 )
 
-(defrule rule-accipiter-nisus-female
+(defrule rule-accipiter-nisus-female-tailfeathers
     (type-length tailfeathers)
     (species-length accipiter-nisus-female)
     (species-rachis-striped accipiter-nisus-female)
@@ -3351,7 +3351,7 @@
     (printout t "Species recognized accipiter-nisus-female by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-accipiter-nisus-female
+(defrule rule-accipiter-nisus-female-tertiaries
     (type-length tertiaries)
     (species-length accipiter-nisus-female)
     (species-rachis-striped accipiter-nisus-female)
@@ -3380,7 +3380,7 @@
     (printout t "Species recognized accipiter-nisus-female by feather of type tertiaries" crlf)
 )
 
-(defrule rule-tyto-alba
+(defrule rule-tyto-alba-primaries
     (type-length primaries)
     (species-length tyto-alba)
     (type-stripes primaries)
@@ -3404,7 +3404,7 @@
     (printout t "Species recognized tyto-alba by feather of type primaries" crlf)
 )
 
-(defrule rule-tyto-alba
+(defrule rule-tyto-alba-secondaries
     (type-length secondaries)
     (species-length tyto-alba)
     (type-stripes secondaries)
@@ -3428,7 +3428,7 @@
     (printout t "Species recognized tyto-alba by feather of type secondaries" crlf)
 )
 
-(defrule rule-tyto-alba
+(defrule rule-tyto-alba-tailfeathers
     (type-length tailfeathers)
     (species-length tyto-alba)
     (type-stripes tailfeathers)
@@ -3454,7 +3454,7 @@
     (printout t "Species recognized tyto-alba by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-tyto-alba
+(defrule rule-tyto-alba-tertiaries
     (type-length tertiaries)
     (species-length tyto-alba)
     (M very-low)
@@ -3477,7 +3477,7 @@
     (printout t "Species recognized tyto-alba by feather of type tertiaries" crlf)
 )
 
-(defrule rule-asio-otus
+(defrule rule-asio-otus-primaries
     (type-length primaries)
     (species-length asio-otus)
     (type-stripes primaries)
@@ -3505,7 +3505,7 @@
     (printout t "Species recognized asio-otus by feather of type primaries" crlf)
 )
 
-(defrule rule-asio-otus
+(defrule rule-asio-otus-secondaries
     (type-length secondaries)
     (species-length asio-otus)
     (type-stripes secondaries)
@@ -3533,7 +3533,7 @@
     (printout t "Species recognized asio-otus by feather of type secondaries" crlf)
 )
 
-(defrule rule-asio-otus
+(defrule rule-asio-otus-tailfeathers
     (type-length tailfeathers)
     (species-length asio-otus)
     (type-stripes tailfeathers)
@@ -3561,7 +3561,7 @@
     (printout t "Species recognized asio-otus by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-asio-otus
+(defrule rule-asio-otus-tertiaries
     (type-length tertiaries)
     (species-length asio-otus)
     (type-stripes tertiaries)
@@ -3588,7 +3588,7 @@
     (printout t "Species recognized asio-otus by feather of type tertiaries" crlf)
 )
 
-(defrule rule-strix-aluco
+(defrule rule-strix-aluco-primaries
     (type-length primaries)
     (species-length strix-aluco)
     (type-stripes primaries)
@@ -3614,7 +3614,7 @@
     (printout t "Species recognized strix-aluco by feather of type primaries" crlf)
 )
 
-(defrule rule-strix-aluco
+(defrule rule-strix-aluco-secondaries
     (type-length secondaries)
     (species-length strix-aluco)
     (type-stripes secondaries)
@@ -3640,7 +3640,7 @@
     (printout t "Species recognized strix-aluco by feather of type secondaries" crlf)
 )
 
-(defrule rule-strix-aluco
+(defrule rule-strix-aluco-tailfeathers
     (type-length tailfeathers)
     (species-length strix-aluco)
     (type-stripes tailfeathers)
@@ -3666,7 +3666,7 @@
     (printout t "Species recognized strix-aluco by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-strix-aluco
+(defrule rule-strix-aluco-tertiaries
     (type-length tertiaries)
     (species-length strix-aluco)
     (type-stripes tertiaries)
@@ -3691,7 +3691,7 @@
     (printout t "Species recognized strix-aluco by feather of type tertiaries" crlf)
 )
 
-(defrule rule-corvus-monedula
+(defrule rule-corvus-monedula-primaries
     (type-length primaries)
     (species-length corvus-monedula)
     (species-glossy corvus-monedula)
@@ -3711,7 +3711,7 @@
     (printout t "Species recognized corvus-monedula by feather of type primaries" crlf)
 )
 
-(defrule rule-corvus-monedula
+(defrule rule-corvus-monedula-secondaries
     (type-length secondaries)
     (species-length corvus-monedula)
     (species-glossy corvus-monedula)
@@ -3731,7 +3731,7 @@
     (printout t "Species recognized corvus-monedula by feather of type secondaries" crlf)
 )
 
-(defrule rule-corvus-monedula
+(defrule rule-corvus-monedula-tailfeathers
     (type-length tailfeathers)
     (species-length corvus-monedula)
     (species-glossy corvus-monedula)
@@ -3751,7 +3751,7 @@
     (printout t "Species recognized corvus-monedula by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-corvus-monedula
+(defrule rule-corvus-monedula-tertiaries
     (type-length tertiaries)
     (species-length corvus-monedula)
     (species-glossy corvus-monedula)
@@ -3771,7 +3771,7 @@
     (printout t "Species recognized corvus-monedula by feather of type tertiaries" crlf)
 )
 
-(defrule rule-corvus-corone
+(defrule rule-corvus-corone-primaries
     (type-length primaries)
     (species-length corvus-corone)
     (species-glossy corvus-corone)
@@ -3791,7 +3791,7 @@
     (printout t "Species recognized corvus-corone by feather of type primaries" crlf)
 )
 
-(defrule rule-corvus-corone
+(defrule rule-corvus-corone-secondaries
     (type-length secondaries)
     (species-length corvus-corone)
     (species-glossy corvus-corone)
@@ -3811,7 +3811,7 @@
     (printout t "Species recognized corvus-corone by feather of type secondaries" crlf)
 )
 
-(defrule rule-corvus-corone
+(defrule rule-corvus-corone-tailfeathers
     (type-length tailfeathers)
     (species-length corvus-corone)
     (species-glossy corvus-corone)
@@ -3831,7 +3831,7 @@
     (printout t "Species recognized corvus-corone by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-corvus-corone
+(defrule rule-corvus-corone-tertiaries
     (type-length tertiaries)
     (species-length corvus-corone)
     (species-glossy corvus-corone)
@@ -3851,7 +3851,7 @@
     (printout t "Species recognized corvus-corone by feather of type tertiaries" crlf)
 )
 
-(defrule rule-corvus-corax
+(defrule rule-corvus-corax-primaries
     (type-length primaries)
     (species-length corvus-corax)
     (species-glossy corvus-corax)
@@ -3871,7 +3871,7 @@
     (printout t "Species recognized corvus-corax by feather of type primaries" crlf)
 )
 
-(defrule rule-corvus-corax
+(defrule rule-corvus-corax-secondaries
     (type-length secondaries)
     (species-length corvus-corax)
     (species-glossy corvus-corax)
@@ -3891,7 +3891,7 @@
     (printout t "Species recognized corvus-corax by feather of type secondaries" crlf)
 )
 
-(defrule rule-corvus-corax
+(defrule rule-corvus-corax-tailfeathers
     (type-length tailfeathers)
     (species-length corvus-corax)
     (species-glossy corvus-corax)
@@ -3911,7 +3911,7 @@
     (printout t "Species recognized corvus-corax by feather of type tailfeathers" crlf)
 )
 
-(defrule rule-corvus-corax
+(defrule rule-corvus-corax-tertiaries
     (type-length tertiaries)
     (species-length corvus-corax)
     (species-glossy corvus-corax)
@@ -3929,16 +3929,4 @@
     (assert (species corvus-corax))
     (assert (type tertiaries))
     (printout t "Species recognized corvus-corax by feather of type tertiaries" crlf)
-)
-
-(defrule rule-type-final
-    (type ?t)
-=>
-    (printout t "Feather type recognized: " ?t crlf)
-)
-
-(defrule rule-species-final
-    (species ?s)
-=>
-    (printout t "Species recognized: " ?s crlf)
 )
