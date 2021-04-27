@@ -1,16 +1,19 @@
-(deffacts facts_example
-	(M (pi 0 1.2))
-	(T 5) CF 0.8
-	(D (pi 0 0.16))
-	(S (pi 0 0.09))
-	(length 120)
+(deffacts facts-anas-platyrhynchos
+	(M high)
+	(T 4) CF 0.8
+	(D high)
+	(S medium)
+	(length )
     (calamus (color white))
-    (vane-inner (color white))
+    (vane-inner (color grey))
+    (vane-inner (color brown))
+    (vane-outer (color black))
     (vane-outer (color white))
-    (vanes-upper (color white))
-    (rachis-lower (color white))
-    (rachis-upper (color white))
-    (stripes visible)
-    (rachis-striped) CF 0.7
+    (vanes-upper (color grey))
+    (vanes-upper (color brown))
+    (rachis-lower (color grey))
+    (rachis-lower (color brown))
+    (rachis-upper (color grey))
+    (rachis-upper (color brown))
     (glossy) CF 0.9
 )
